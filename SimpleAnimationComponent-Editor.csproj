@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{03168DAF-D3B0-2ED3-46A7-39A5B863F761}</ProjectGuid>
+    <ProjectGuid>{1CD0FE92-316D-339A-DB3F-5D236D4E167C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SimpleAnimationComponent-Editor</AssemblyName>
@@ -623,7 +623,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SimpleAnimationComponent.csproj">
-      <Project>{319E2E03-1533-62C7-9B71-EC56ABB298C0}</Project>
+      <Project>{DDE52687-D877-8AE8-30B2-2CB884436B9E}</Project>
       <Name>SimpleAnimationComponent</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7D2EE317-8493-5227-F220-53FFFA6168BA}</ProjectGuid>
+    <ProjectGuid>{E7FAFF76-7D72-4A29-5443-62C64C79E65D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SimpleAnimation-Tests</AssemblyName>
@@ -624,7 +624,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SimpleAnimationComponent.csproj">
-      <Project>{319E2E03-1533-62C7-9B71-EC56ABB298C0}</Project>
+      <Project>{DDE52687-D877-8AE8-30B2-2CB884436B9E}</Project>
       <Name>SimpleAnimationComponent</Name>
     </ProjectReference>
   </ItemGroup>

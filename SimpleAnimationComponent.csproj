@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{319E2E03-1533-62C7-9B71-EC56ABB298C0}</ProjectGuid>
+    <ProjectGuid>{DDE52687-D877-8AE8-30B2-2CB884436B9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>SimpleAnimationComponent</AssemblyName>

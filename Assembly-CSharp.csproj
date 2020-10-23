@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D34F7D81-0AAE-9E79-AF04-52C97AEE18F4}</ProjectGuid>
+    <ProjectGuid>{D0C8F531-7DE0-E1C0-A93D-60946BF9C3E3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Data Model\Population\PopSimulator.cs" />
+    <Compile Include="Assets\Scripts\UI\SpeedSlider.cs" />
     <Compile Include="Assets\Scripts\Slimeboy Scripts\SV ObjectProperties\Climbable.cs" />
     <Compile Include="Assets\Scripts\Data Model\Creatures\Goblyn.cs" />
     <Compile Include="Assets\Scripts\Slimeboy Scripts\SV ObjectProperties\DamageZone.cs" />
@@ -127,7 +128,6 @@
     <Compile Include="Assets\Scripts\Slimeboy Scripts\SV ObjectProperties\Float.cs" />
     <Compile Include="Assets\Scripts\Slimeboy Scripts\SV UI and World\EditMode.cs" />
     <Compile Include="Assets\Scripts\Data Model\Furniture.cs" />
-    <Compile Include="Assets\Scripts\UI\SpeedSlider.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -815,11 +815,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SimpleAnimationComponent.csproj">
-      <Project>{319E2E03-1533-62C7-9B71-EC56ABB298C0}</Project>
+      <Project>{DDE52687-D877-8AE8-30B2-2CB884436B9E}</Project>
       <Name>SimpleAnimationComponent</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleAnimationComponent-Editor.csproj">
-      <Project>{03168DAF-D3B0-2ED3-46A7-39A5B863F761}</Project>
+      <Project>{1CD0FE92-316D-339A-DB3F-5D236D4E167C}</Project>
       <Name>SimpleAnimationComponent-Editor</Name>
     </ProjectReference>
   </ItemGroup>
