@@ -76,7 +76,7 @@ public class World : IXmlSerializable
 
         roomList = new List<Room>();
         roomList.Add(new Room());   // instantiate room 0 
-
+        Debug.Log("Initialized room index: " + roomList.IndexOf(roomList.First()));
         plantsList = new List<Plant>();
 
         // Generate noise map for surface elevations

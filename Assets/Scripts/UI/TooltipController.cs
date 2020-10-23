@@ -16,6 +16,7 @@ public class TooltipController : MonoBehaviour
     TMP_Text[] tooltipTMPs;
 
     public GameObject detailedTooltip;
+    Room highlightedRoom;
 
     #endregion
     void Start()
@@ -39,7 +40,6 @@ public class TooltipController : MonoBehaviour
         // Move tooltip to follow the mouse cursor
         //Vector3 newPosition = Input.mousePosition + offset;
         //transform.position = newPosition;
-        //detailedTooltip.transform.position = newPosition;
 
         // Get tile under mouse cursor
         Tile t = mouseController.GetMouseOverTile();
@@ -72,13 +72,17 @@ public class TooltipController : MonoBehaviour
     {
         string s = "";
 
-        if (t == null || t.room == null)
-            return s;
+        if (t == null) return s;
 
         int roomIndex = t.w.roomList.IndexOf(t.room);
 
-        if (roomIndex <= 0)
+        if (!t.hasRoom)
+        {
+            HighlightRoom(null);
             return WorldController.Instance.w.currentZDepth == 0 ? "The Underground" : "The Surface";
+        }
+        else
+            HighlightRoom(t.room);
 
         if (t.room.owner == null)
         {
@@ -92,6 +96,35 @@ public class TooltipController : MonoBehaviour
             s = t.room.ToString();
         }
         return s;
+    }
+
+    void HighlightRoom(Room newRoom)
+    {
+
+        if (highlightedRoom != null)
+        {
+            // Unhighlight old room
+
+            foreach (Tile t in highlightedRoom.tilesInRoom.ToArray())
+            {
+                GameObject t_go = TileSpriteController.Instance.tileGameObjectMap[t];
+                SpriteRenderer t_sr = t_go.GetComponent<SpriteRenderer>();
+                t_sr.color = new Color(1, 1, 1);
+            }
+        }
+
+        if (newRoom != null)
+        {
+            // Highlight the new room
+            foreach (Tile t in newRoom.tilesInRoom.ToArray())
+            {
+                GameObject t_go = TileSpriteController.Instance.tileGameObjectMap[t];
+                SpriteRenderer t_sr = t_go.GetComponent<SpriteRenderer>();
+                t_sr.color = new Color(0, 1, 0);
+            }
+        }
+
+        highlightedRoom = newRoom;
     }
 
     string CheckTileType(Tile t)
