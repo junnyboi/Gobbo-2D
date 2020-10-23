@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Character
+  - Projectile
+  - CameraConfiner
+  - NPC
+  - Edible
+  - Tiles
+  - Liquid
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Tiles
+    uniqueID: 3574531415
+    locked: 0
+  - name: Resources
+    uniqueID: 3713429537
+    locked: 0
+  - name: AquaticCreature
+    uniqueID: 1626366247
+    locked: 0
+  - name: Plant
+    uniqueID: 1543996983
+    locked: 0
+  - name: Furniture
+    uniqueID: 1553419829
+    locked: 0
+  - name: Jobs
+    uniqueID: 29109215
+    locked: 0
+  - name: Creature
+    uniqueID: 3718437925
+    locked: 0
+  - name: CreatureOverlay
+    uniqueID: 2725465823
+    locked: 0
+  - name: TallObject
+    uniqueID: 620545107
+    locked: 0
+  - name: TileUI
+    uniqueID: 2675379779
+    locked: 0

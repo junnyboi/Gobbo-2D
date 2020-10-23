@@ -1,0 +1,2003 @@
+fileFormatVersion: 2
+guid: 8947f8f0f530f2a419f1b10af3f29209
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4247437727702281659
+    second: WallStone
+  - first:
+      213: 2037762882012221870
+    second: Wall_ES
+  - first:
+      213: -1496028024396654306
+    second: Wall_EW
+  - first:
+      213: -3820361353873064054
+    second: Wall_SW
+  - first:
+      213: 5171970469277651662
+    second: Wall_Dirt
+  - first:
+      213: 1620705325057185416
+    second: Wall_NS
+  - first:
+      213: 3323553022748927789
+    second: hyptosis cave wood tiles_6
+  - first:
+      213: -7364815309746559421
+    second: Wall_SN
+  - first:
+      213: 6082638208793207469
+    second: Empty
+  - first:
+      213: 8866174235023558061
+    second: Wall_NE
+  - first:
+      213: 1457245183809366946
+    second: Wall_WE
+  - first:
+      213: -7080248888548403616
+    second: Wall_NW
+  - first:
+      213: -4356220481664130387
+    second: Wall_EMPTY
+  - first:
+      213: 6224153613094714680
+    second: Wall_ESse
+  - first:
+      213: -1836910531291330177
+    second: Wall_ESWsesw
+  - first:
+      213: 6587989471528257013
+    second: Wall_SWsw
+  - first:
+      213: 5775439982795986541
+    second: Empty_Seeded
+  - first:
+      213: 4124093356737666868
+    second: Wall_NESnese
+  - first:
+      213: -7131432364434824063
+    second: Wall_NESWneseswnw
+  - first:
+      213: 7271045368337197629
+    second: Wall_NSWswnw
+  - first:
+      213: 9187253887377760911
+    second: Wall_NEne
+  - first:
+      213: 4734183013870068806
+    second: Wall_NEWnenw
+  - first:
+      213: 5143701625841618249
+    second: Wall_NWnw
+  - first:
+      213: -8361713152462624011
+    second: hyptosis cave wood tiles_23
+  - first:
+      213: 8117101351119788103
+    second: hyptosis cave wood tiles_24
+  - first:
+      213: 6872419879227201391
+    second: hyptosis cave wood tiles_25
+  - first:
+      213: 3156508280690868621
+    second: hyptosis cave wood tiles_26
+  - first:
+      213: 738410119005864748
+    second: hyptosis cave wood tiles_27
+  - first:
+      213: -6520321528726589568
+    second: Wall_EMPTY
+  - first:
+      213: 174499182817791057
+    second: hyptosis cave wood tiles_29
+  - first:
+      213: -4464843964649454900
+    second: hyptosis cave wood tiles_30
+  - first:
+      213: -4054649825047033871
+    second: hyptosis cave wood tiles_31
+  - first:
+      213: 6732085649413552075
+    second: hyptosis cave wood tiles_32
+  - first:
+      213: 4338992274596849305
+    second: hyptosis cave wood tiles_33
+  - first:
+      213: -4569760855316627716
+    second: Wall_S
+  - first:
+      213: 4765467993120762272
+    second: hyptosis cave wood tiles_35
+  - first:
+      213: 3389803123676217104
+    second: hyptosis cave wood tiles_36
+  - first:
+      213: 1933322283832292290
+    second: Wall_E
+  - first:
+      213: 7643515003207939064
+    second: Wall_NESW
+  - first:
+      213: -2074705750366238365
+    second: Wall_W
+  - first:
+      213: 5837725302544573322
+    second: hyptosis cave wood tiles_40
+  - first:
+      213: 751215659628652538
+    second: Wall_N
+  - first:
+      213: -2303096952157175629
+    second: hyptosis cave wood tiles_42
+  - first:
+      213: -6739102788143416056
+    second: hyptosis cave wood tiles_43
+  - first:
+      213: 4915128082275914616
+    second: hyptosis cave wood tiles_44
+  - first:
+      213: -39592273748278626
+    second: hyptosis cave wood tiles_45
+  - first:
+      213: -8608336189009019532
+    second: hyptosis cave wood tiles_46
+  - first:
+      213: -2120592432288477432
+    second: hyptosis cave wood tiles_47
+  - first:
+      213: 5094799157423669501
+    second: Wall_NSW
+  - first:
+      213: -3338122872287891076
+    second: Wall_NES
+  - first:
+      213: -464768438262580898
+    second: hyptosis cave wood tiles_50
+  - first:
+      213: -1052811027455616227
+    second: hyptosis cave wood tiles_51
+  - first:
+      213: -6814479337711940820
+    second: hyptosis cave wood tiles_52
+  - first:
+      213: -1488301744186579494
+    second: hyptosis cave wood tiles_53
+  - first:
+      213: -1869712105706587804
+    second: hyptosis cave wood tiles_54
+  - first:
+      213: 8251381918037278911
+    second: hyptosis cave wood tiles_55
+  - first:
+      213: 5299868950572856536
+    second: hyptosis cave wood tiles_56
+  - first:
+      213: 7996263956507336477
+    second: hyptosis cave wood tiles_57
+  - first:
+      213: 4231390880764335011
+    second: hyptosis cave wood tiles_58
+  - first:
+      213: 3237446061847230770
+    second: hyptosis cave wood tiles_59
+  - first:
+      213: -4862248769626870210
+    second: Wall_NEW
+  - first:
+      213: 4103262422225008572
+    second: hyptosis cave wood tiles_61
+  - first:
+      213: -6727045726597290126
+    second: hyptosis cave wood tiles_62
+  - first:
+      213: -6879570810999609580
+    second: hyptosis cave wood tiles_63
+  - first:
+      213: 7006498712121604427
+    second: Wall_ESW
+  - first:
+      213: -3709838369479790211
+    second: hyptosis cave wood tiles_65
+  - first:
+      213: -5051052087657635629
+    second: hyptosis cave wood tiles_66
+  - first:
+      213: 1564052995769283700
+    second: hyptosis cave wood tiles_67
+  - first:
+      213: 1025725949090534713
+    second: hyptosis cave wood tiles_68
+  - first:
+      213: -6902246602935910110
+    second: WallStone
+  - first:
+      213: -361713810004438980
+    second: hyptosis cave wood tiles_1
+  - first:
+      213: -5424185342869592089
+    second: hyptosis cave wood tiles_2
+  - first:
+      213: 8836688471831706345
+    second: hyptosis cave wood tiles_3
+  - first:
+      213: 4219870004667826920
+    second: hyptosis cave wood tiles_4
+  - first:
+      213: -2715582243936696496
+    second: hyptosis cave wood tiles_5
+  - first:
+      213: -6765098556620567658
+    second: hyptosis cave wood tiles_6
+  - first:
+      213: 651755786142704776
+    second: hyptosis cave wood tiles_7
+  - first:
+      213: -4142313500977947644
+    second: hyptosis cave wood tiles_8
+  - first:
+      213: 2125488178432458391
+    second: hyptosis cave wood tiles_9
+  - first:
+      213: 5863415213690055155
+    second: hyptosis cave wood tiles_10
+  - first:
+      213: -7596821055157572666
+    second: hyptosis cave wood tiles_11
+  - first:
+      213: -8437362731037979555
+    second: hyptosis cave wood tiles_12
+  - first:
+      213: 2571039283412698972
+    second: hyptosis cave wood tiles_13
+  - first:
+      213: 2110594393493788669
+    second: hyptosis cave wood tiles_14
+  - first:
+      213: -3470741102713782311
+    second: hyptosis cave wood tiles_15
+  - first:
+      213: -2217774098526299724
+    second: Empty_Seeded
+  - first:
+      213: 2626740323203187121
+    second: hyptosis cave wood tiles_17
+  - first:
+      213: -5175383550601708830
+    second: hyptosis cave wood tiles_18
+  - first:
+      213: -681480755413959724
+    second: hyptosis cave wood tiles_19
+  - first:
+      213: -7357560030466372506
+    second: hyptosis cave wood tiles_20
+  - first:
+      213: -4652059992691826557
+    second: hyptosis cave wood tiles_21
+  - first:
+      213: 3077660893177154549
+    second: hyptosis cave wood tiles_22
+  - first:
+      213: -8266376189207636918
+    second: hyptosis cave wood tiles_23
+  - first:
+      213: 2539249908785555770
+    second: hyptosis cave wood tiles_24
+  - first:
+      213: -8055444357714087229
+    second: hyptosis cave wood tiles_25
+  - first:
+      213: 1614290064930298074
+    second: hyptosis cave wood tiles_26
+  - first:
+      213: 2016183693320467555
+    second: hyptosis cave wood tiles_27
+  - first:
+      213: -6520321528726589568
+    second: hyptosis cave wood tiles_28
+  - first:
+      213: 1319261360295837812
+    second: hyptosis cave wood tiles_29
+  - first:
+      213: -8394704848178502973
+    second: hyptosis cave wood tiles_30
+  - first:
+      213: -7538033752246143056
+    second: hyptosis cave wood tiles_31
+  - first:
+      213: -5227801836513720444
+    second: hyptosis cave wood tiles_32
+  - first:
+      213: 8148151372515354155
+    second: hyptosis cave wood tiles_33
+  - first:
+      213: 8641144339921948539
+    second: hyptosis cave wood tiles_34
+  - first:
+      213: -1741040204758022466
+    second: hyptosis cave wood tiles_35
+  - first:
+      213: -4130278988055278557
+    second: hyptosis cave wood tiles_36
+  - first:
+      213: -5473334425500270896
+    second: hyptosis cave wood tiles_37
+  - first:
+      213: 110176101300047523
+    second: hyptosis cave wood tiles_38
+  - first:
+      213: -4064379703226626789
+    second: hyptosis cave wood tiles_39
+  - first:
+      213: 3892016388376141969
+    second: hyptosis cave wood tiles_40
+  - first:
+      213: 5897340344482049674
+    second: hyptosis cave wood tiles_41
+  - first:
+      213: -854235349214261066
+    second: hyptosis cave wood tiles_42
+  - first:
+      213: 756161947700607639
+    second: hyptosis cave wood tiles_43
+  - first:
+      213: -6474180304570123226
+    second: hyptosis cave wood tiles_44
+  - first:
+      213: -5800536524812558687
+    second: hyptosis cave wood tiles_45
+  - first:
+      213: -1196087657427427417
+    second: hyptosis cave wood tiles_46
+  - first:
+      213: -67423829229122388
+    second: hyptosis cave wood tiles_47
+  - first:
+      213: 3009436434525815502
+    second: hyptosis cave wood tiles_48
+  - first:
+      213: 5325742031193360818
+    second: hyptosis cave wood tiles_49
+  - first:
+      213: -5744605079789649196
+    second: hyptosis cave wood tiles_50
+  - first:
+      213: -7521942653723390075
+    second: hyptosis cave wood tiles_51
+  - first:
+      213: 5845564887927494689
+    second: hyptosis cave wood tiles_52
+  - first:
+      213: -8453987284251887816
+    second: hyptosis cave wood tiles_53
+  - first:
+      213: -1648525298766336716
+    second: hyptosis cave wood tiles_54
+  - first:
+      213: -4163830931635760242
+    second: hyptosis cave wood tiles_55
+  - first:
+      213: -1932420399215626499
+    second: hyptosis cave wood tiles_56
+  - first:
+      213: -8380715472871561317
+    second: hyptosis cave wood tiles_57
+  - first:
+      213: -904949457695517635
+    second: hyptosis cave wood tiles_58
+  - first:
+      213: -2197249773792695397
+    second: hyptosis cave wood tiles_59
+  - first:
+      213: -3225900735386216058
+    second: hyptosis cave wood tiles_60
+  - first:
+      213: -3890690851266205530
+    second: hyptosis cave wood tiles_61
+  - first:
+      213: 4923462219475671855
+    second: hyptosis cave wood tiles_62
+  - first:
+      213: 2499592466860680276
+    second: hyptosis cave wood tiles_63
+  - first:
+      213: 2916626392409626520
+    second: hyptosis cave wood tiles_64
+  - first:
+      213: 8981133639994797424
+    second: hyptosis cave wood tiles_65
+  - first:
+      213: -779824449820656143
+    second: hyptosis cave wood tiles_66
+  - first:
+      213: -8258799609483385933
+    second: hyptosis cave wood tiles_67
+  - first:
+      213: 1798291913966885255
+    second: hyptosis cave wood tiles_68
+  - first:
+      213: -4238785711719114407
+    second: hyptosis cave wood tiles_69
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WallStone
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd69450c1ee1fa30800000000000000
+      internalID: 4247437727702281659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_ES
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea190de6b86974c10800000000000000
+      internalID: 2037762882012221870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_EW
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19dec7207a0d3be0800000000000000
+      internalID: -1496028024396654306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_SW
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 576
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ff3ccf6995bfac0800000000000000
+      internalID: -3820361353873064054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Dirt
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2da125db786c740800000000000000
+      internalID: 5171970469277651662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NS
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8861e9108e6ed7610800000000000000
+      internalID: 1620705325057185416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2720218dd1af1e20800000000000000
+      internalID: 3323553022748927789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_SN
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 544
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346a23a0f7beac990800000000000000
+      internalID: -7364815309746559421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Empty
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da26654493fd96450800000000000000
+      internalID: 6082638208793207469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NE
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5cc43ed7afa0b70800000000000000
+      internalID: 8866174235023558061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_WE
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab2b9b16cc293410800000000000000
+      internalID: 1457245183809366946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NW
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066d7bc0627edbd90800000000000000
+      internalID: -7080248888548403616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2e02b5d889b83c0800000000000000
+      internalID: -4356220481664130387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_ESse
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d79ffebb2a06650800000000000000
+      internalID: 6224153613094714680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_ESWsesw
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79c43aaa9bf186e0800000000000000
+      internalID: -1836910531291330177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_SWsw
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5847a058d3d6b50800000000000000
+      internalID: 6587989471528257013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Empty_Seeded
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d669424901c762050800000000000000
+      internalID: 5775439982795986541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NESnese
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f95ecbe09bb3930800000000000000
+      internalID: 4124093356737666868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NESWneseswnw
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184632a6c00180d90800000000000000
+      internalID: -7131432364434824063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NSWswnw
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3aec752d31f7e460800000000000000
+      internalID: 7271045368337197629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NEne
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f826a720cbeaf7f70800000000000000
+      internalID: 9187253887377760911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NEWnenw
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644e96b4e5233b140800000000000000
+      internalID: 4734183013870068806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NWnw
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d83ee4069126740800000000000000
+      internalID: 5143701625841618249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fae0c9a03a35fb80800000000000000
+      internalID: -8361713152462624011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748965f2cacb5a070800000000000000
+      internalID: 8117101351119788103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f679ba0f77dbf5f50800000000000000
+      internalID: 6872419879227201391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d818821be8b2ecb20800000000000000
+      internalID: 3156508280690868621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2306e9471c5f3a00800000000000000
+      internalID: 738410119005864748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_EMPTY
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f6be2ad1a2385a0800000000000000
+      internalID: -6520321528726589568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c437d0512fb6200800000000000000
+      internalID: 174499182817791057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2c585e110b902c0800000000000000
+      internalID: -4464843964649454900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7c871777dfab7c0800000000000000
+      internalID: -4054649825047033871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7bcc2ea3c2d6d50800000000000000
+      internalID: 6732085649413552075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996628a1c72373c30800000000000000
+      internalID: 4338992274596849305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_S
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfefd56b6b2f490c0800000000000000
+      internalID: -4569760855316627716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9e47624e7522240800000000000000
+      internalID: 4765467993120762272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ffa352bfffa0f20800000000000000
+      internalID: 3389803123676217104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_E
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3bb2cbf5a84da10800000000000000
+      internalID: 1933322283832292290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NESW
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3f399f568331a60800000000000000
+      internalID: 7643515003207939064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_W
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369c5ffbc1a2533e0800000000000000
+      internalID: -2074705750366238365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83aa7aab34c30150800000000000000
+      internalID: 5837725302544573322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_N
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af760ed89aadc6a00800000000000000
+      internalID: 751215659628652538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0036b3681c900e0800000000000000
+      internalID: -2303096952157175629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dfddf28b5e972a0800000000000000
+      internalID: -6739102788143416056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8735a9903fa063440800000000000000
+      internalID: 4915128082275914616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92426b6907537ff0800000000000000
+      internalID: -39592273748278626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d3af258db098880800000000000000
+      internalID: -8608336189009019532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f40101b642292e0800000000000000
+      internalID: -2120592432288477432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NSW
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0823c17dc54b640800000000000000
+      internalID: 5094799157423669501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NES
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c717cac0fea9ca1d0800000000000000
+      internalID: -3338122872287891076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59bb8e519fcc89f0800000000000000
+      internalID: -464768438262580898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bd4e4d2f9a361f0800000000000000
+      internalID: -1052811027455616227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bc072a52b1e61a0800000000000000
+      internalID: -6814479337711940820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad52a23f27d785be0800000000000000
+      internalID: -1488301744186579494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4697c1bfeb27d06e0800000000000000
+      internalID: -1869712105706587804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_55
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb081b2032cc28270800000000000000
+      internalID: 8251381918037278911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4740b0bbaec8940800000000000000
+      internalID: 5299868950572856536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f11e1d3bf68fe60800000000000000
+      internalID: 7996263956507336477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a319c1569be8ba30800000000000000
+      internalID: 4231390880764335011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_59
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23934ef5a08bdec20800000000000000
+      internalID: 3237446061847230770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_NEW
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e6fcc5182d58cb0800000000000000
+      internalID: -4862248769626870210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb73ee8de67b1f830800000000000000
+      internalID: 4103262422225008572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277eb569d8bb4a2a0800000000000000
+      internalID: -6727045726597290126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417e8330ccad680a0800000000000000
+      internalID: -6879570810999609580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_ESW
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b497d37e4751c3160800000000000000
+      internalID: 7006498712121604427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71fa0598a1048cc0800000000000000
+      internalID: -3709838369479790211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0eb2d43ee07e9b0800000000000000
+      internalID: -5051052087657635629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_67
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474b6b6b9e1a4b510800000000000000
+      internalID: 1564052995769283700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_68
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9351170f05c1c3e00800000000000000
+      internalID: 1025725949090534713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis cave wood tiles_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9591bfd6adecc25c0800000000000000
+      internalID: -4238785711719114407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

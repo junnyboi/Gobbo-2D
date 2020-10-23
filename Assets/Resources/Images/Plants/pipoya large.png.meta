@@ -1,0 +1,1825 @@
+fileFormatVersion: 2
+guid: 37b7d5084ac54f642814168b6dc51fc3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -53244310294990777
+    second: pipoya environment_0
+  - first:
+      213: 1454749937680077124
+    second: pipoya environment_1
+  - first:
+      213: 4243042335117398702
+    second: pipoya environment_2
+  - first:
+      213: 758441637900695854
+    second: pipoya environment_3
+  - first:
+      213: -112196181279464003
+    second: pipoya environment_4
+  - first:
+      213: 4161914246026692503
+    second: pipoya environment_5
+  - first:
+      213: 546769488739483606
+    second: pipoya environment_6
+  - first:
+      213: -6522229931773801719
+    second: pipoya environment_7
+  - first:
+      213: 4291400292204774003
+    second: pipoya environment_8
+  - first:
+      213: 6269429579775490239
+    second: pipoya environment_9
+  - first:
+      213: 5844531021112009166
+    second: pipoya environment_10
+  - first:
+      213: 5037550588551897494
+    second: pipoya environment_11
+  - first:
+      213: -8823590495825536425
+    second: pipoya environment_12
+  - first:
+      213: 193220006368319790
+    second: pipoya environment_13
+  - first:
+      213: 1599906031209367043
+    second: pipoya environment_14
+  - first:
+      213: 4625023567879139295
+    second: pipoya environment_15
+  - first:
+      213: -4872719935923612835
+    second: pipoya environment_0
+  - first:
+      213: -3675166801182299996
+    second: pipoya environment_1
+  - first:
+      213: -2599203716725862726
+    second: pipoya environment_2
+  - first:
+      213: 7357585408802908654
+    second: pipoya environment_3
+  - first:
+      213: 7718906379705369290
+    second: pipoya environment_4
+  - first:
+      213: -7732249041819276597
+    second: pipoya environment_5
+  - first:
+      213: -1306457616116886061
+    second: pipoya environment_6
+  - first:
+      213: 1308154172813914371
+    second: pipoya environment_7
+  - first:
+      213: -1200144573539416357
+    second: pipoya environment_8
+  - first:
+      213: -6112278943344454014
+    second: pipoya environment_9
+  - first:
+      213: 4489182806654970628
+    second: pipoya environment_10
+  - first:
+      213: -3944802655461242248
+    second: pipoya environment_11
+  - first:
+      213: 1299994438544910130
+    second: pipoya environment_12
+  - first:
+      213: -2318030155321712153
+    second: pipoya environment_13
+  - first:
+      213: 6384247968581386034
+    second: pipoya environment_14
+  - first:
+      213: -5013548771580660200
+    second: pipoya environment_15
+  - first:
+      213: -2877761932974668076
+    second: pipoya environment_16
+  - first:
+      213: -4232053375862066111
+    second: pipoya environment_17
+  - first:
+      213: 4725654257508420069
+    second: pipoya environment_18
+  - first:
+      213: 3056903425936836137
+    second: pipoya environment_19
+  - first:
+      213: 1688308557684212452
+    second: pipoya environment_20
+  - first:
+      213: -4999377705812896427
+    second: pipoya environment_21
+  - first:
+      213: -503907206224797505
+    second: pipoya environment_22
+  - first:
+      213: -7014224308843169947
+    second: pipoya environment_23
+  - first:
+      213: -2340034422354488126
+    second: pipoya environment_24
+  - first:
+      213: 5794746322609562004
+    second: pipoya environment_25
+  - first:
+      213: 5476861000645219512
+    second: pipoya environment_26
+  - first:
+      213: -2500208823162474808
+    second: pipoya environment_27
+  - first:
+      213: -4591899878254841878
+    second: pipoya environment_28
+  - first:
+      213: -4237518676178310882
+    second: pipoya environment_29
+  - first:
+      213: -7419749793332674798
+    second: pipoya environment_30
+  - first:
+      213: 1766324811344573377
+    second: pipoya environment_31
+  - first:
+      213: 4158566094687955948
+    second: pipoya environment_32
+  - first:
+      213: 6156034333207907145
+    second: pipoya environment_33
+  - first:
+      213: 8770616484844452380
+    second: pipoya environment_34
+  - first:
+      213: -8712729086157909762
+    second: pipoya environment_35
+  - first:
+      213: -3801178599432217816
+    second: pipoya environment_36
+  - first:
+      213: -6403828689160183665
+    second: pipoya environment_37
+  - first:
+      213: -687556015832421764
+    second: pipoya environment_38
+  - first:
+      213: -2803389091088986963
+    second: pipoya environment_39
+  - first:
+      213: 3161810609606770001
+    second: pipoya environment_40
+  - first:
+      213: -3044786646675941443
+    second: pipoya environment_41
+  - first:
+      213: -4167399224945592527
+    second: pipoya environment_42
+  - first:
+      213: 4685089970274772726
+    second: pipoya environment_43
+  - first:
+      213: -7196238024301190617
+    second: pipoya environment_44
+  - first:
+      213: -6502643542297960999
+    second: pipoya environment_45
+  - first:
+      213: -7973968090590882795
+    second: pipoya environment_46
+  - first:
+      213: 6289203327999615050
+    second: pipoya environment_47
+  - first:
+      213: 290408458910112780
+    second: pipoya environment_48
+  - first:
+      213: 5750055991751304947
+    second: pipoya environment_49
+  - first:
+      213: -8520654376738617736
+    second: pipoya environment_50
+  - first:
+      213: 1124627435773233135
+    second: pipoya environment_51
+  - first:
+      213: -7032524786321695731
+    second: pipoya environment_52
+  - first:
+      213: -4569505973808426154
+    second: pipoya environment_53
+  - first:
+      213: -4626771566268700103
+    second: pipoya environment_54
+  - first:
+      213: 6282876242287918781
+    second: pipoya environment_55
+  - first:
+      213: 1240829857642785782
+    second: pipoya environment_56
+  - first:
+      213: 3899249073438440884
+    second: pipoya environment_57
+  - first:
+      213: 5537818766899627249
+    second: pipoya environment_58
+  - first:
+      213: -8649221564044263491
+    second: pipoya environment_59
+  - first:
+      213: -5592576731737625956
+    second: pipoya environment_60
+  - first:
+      213: 2284469504777722253
+    second: pipoya environment_61
+  - first:
+      213: 7490961124784969248
+    second: pipoya environment_62
+  - first:
+      213: 1571020947238147064
+    second: pipoya environment_63
+  - first:
+      213: 6024904212891419289
+    second: pipoya environment_64
+  - first:
+      213: 5678984033391171766
+    second: pipoya environment_65
+  - first:
+      213: -770553421662895543
+    second: pipoya environment_66
+  - first:
+      213: -6861879574761179788
+    second: pipoya environment_67
+  - first:
+      213: 4989678020278830136
+    second: pipoya environment_68
+  - first:
+      213: 8157547110334355582
+    second: pipoya environment_69
+  - first:
+      213: 2173491124681128548
+    second: pipoya environment_70
+  - first:
+      213: -5982612646310915046
+    second: pipoya environment_71
+  - first:
+      213: -7541298657939360473
+    second: pipoya environment_72
+  - first:
+      213: 1507353267850016291
+    second: pipoya environment_73
+  - first:
+      213: -5504730747474912067
+    second: pipoya environment_74
+  - first:
+      213: -4557021847106310617
+    second: pipoya environment_75
+  - first:
+      213: 2942221334695636506
+    second: pipoya environment_76
+  - first:
+      213: -6892702409864747874
+    second: pipoya environment_77
+  - first:
+      213: 2377901350526447452
+    second: pipoya environment_78
+  - first:
+      213: -2221376880297423068
+    second: pipoya environment_79
+  - first:
+      213: 757688061074050088
+    second: pipoya environment_80
+  - first:
+      213: -4183453224476361569
+    second: pipoya environment_81
+  - first:
+      213: -8699172171919781592
+    second: pipoya environment_82
+  - first:
+      213: -1642550872762276820
+    second: pipoya environment_83
+  - first:
+      213: -6054528678438604522
+    second: pipoya environment_84
+  - first:
+      213: 4645973138229289745
+    second: pipoya environment_85
+  - first:
+      213: 3738566229232539742
+    second: pipoya environment_86
+  - first:
+      213: -1836209169138081770
+    second: pipoya environment_87
+  - first:
+      213: 9081727161670905485
+    second: pipoya environment_88
+  - first:
+      213: 6560721667034471725
+    second: pipoya environment_89
+  - first:
+      213: 2907173760303956636
+    second: pipoya environment_90
+  - first:
+      213: -3440906629050147158
+    second: pipoya environment_91
+  - first:
+      213: -4708979109492401893
+    second: pipoya environment_92
+  - first:
+      213: 735375592103965933
+    second: pipoya environment_93
+  - first:
+      213: 4567167154830979581
+    second: pipoya environment_94
+  - first:
+      213: 4349345879409929052
+    second: pipoya environment_95
+  - first:
+      213: 6142946675752156205
+    second: pipoya environment_96
+  - first:
+      213: 6855708805276742586
+    second: pipoya environment_97
+  - first:
+      213: -2366566378707907850
+    second: pipoya environment_98
+  - first:
+      213: 7124382933937915406
+    second: pipoya environment_99
+  - first:
+      213: -7918030435844529485
+    second: pipoya environment_100
+  - first:
+      213: 2747785854660718179
+    second: pipoya environment_101
+  - first:
+      213: 4914431199918041714
+    second: pipoya environment_102
+  - first:
+      213: -2865364298549974715
+    second: pipoya environment_103
+  - first:
+      213: -856620764093964503
+    second: pipoya environment_104
+  - first:
+      213: 2924152587602672322
+    second: pipoya environment_105
+  - first:
+      213: -6338001599267501193
+    second: pipoya environment_106
+  - first:
+      213: -1370141714633515336
+    second: pipoya environment_107
+  - first:
+      213: 754521984914332685
+    second: pipoya environment_108
+  - first:
+      213: -7072917596553228117
+    second: pipoya environment_109
+  - first:
+      213: 6431206545955947083
+    second: pipoya environment_110
+  - first:
+      213: -4557089386982208096
+    second: pipoya environment_111
+  - first:
+      213: -7262353858221697815
+    second: pipoya environment_112
+  - first:
+      213: 3738899402759960781
+    second: pipoya environment_113
+  - first:
+      213: 6946232614732724685
+    second: pipoya environment_114
+  - first:
+      213: -2792294362266132192
+    second: pipoya environment_115
+  - first:
+      213: -3498647164290397334
+    second: pipoya environment_116
+  - first:
+      213: 7799010155577916215
+    second: pipoya environment_117
+  - first:
+      213: 6770695754702298665
+    second: pipoya environment_118
+  - first:
+      213: -810079834191248540
+    second: pipoya environment_119
+  - first:
+      213: -876142581798800156
+    second: pipoya environment_120
+  - first:
+      213: 4010989046651907005
+    second: pipoya environment_121
+  - first:
+      213: -5312425017925202049
+    second: pipoya environment_122
+  - first:
+      213: 2484940587329495267
+    second: pipoya environment_123
+  - first:
+      213: -8157279838316878618
+    second: pipoya environment_124
+  - first:
+      213: -7348067281197112153
+    second: pipoya environment_125
+  - first:
+      213: 4560615354563209071
+    second: pipoya environment_126
+  - first:
+      213: 823183411159419107
+    second: pipoya environment_127
+  - first:
+      213: -1278745467323013203
+    second: pipoya environment_128
+  - first:
+      213: 3005352721853482209
+    second: pipoya environment_129
+  - first:
+      213: -7839416824115852858
+    second: pipoya environment_130
+  - first:
+      213: 1604251538462485290
+    second: pipoya environment_131
+  - first:
+      213: 119690906356287996
+    second: pipoya environment_132
+  - first:
+      213: 5760877520546115736
+    second: pipoya environment_133
+  - first:
+      213: 6985851028794944006
+    second: pipoya environment_134
+  - first:
+      213: -5393987778593985510
+    second: pipoya environment_135
+  - first:
+      213: -290999859301809188
+    second: pipoya environment_136
+  - first:
+      213: -3471097536511082930
+    second: pipoya environment_137
+  - first:
+      213: -346176278639789531
+    second: pipoya environment_138
+  - first:
+      213: -7356392006801620733
+    second: pipoya environment_139
+  - first:
+      213: 1443398211072575947
+    second: pipoya environment_140
+  - first:
+      213: -2606102503108808309
+    second: pipoya environment_141
+  - first:
+      213: -5815302945345340073
+    second: pipoya environment_142
+  - first:
+      213: 1013713879989897650
+    second: pipoya environment_143
+  - first:
+      213: 2969302008576540999
+    second: pipoya environment_144
+  - first:
+      213: -2803353624291568039
+    second: pipoya environment_145
+  - first:
+      213: 3208861164367725825
+    second: pipoya environment_146
+  - first:
+      213: -1980012680389987050
+    second: pipoya environment_147
+  - first:
+      213: 4168585770066101166
+    second: pipoya environment_148
+  - first:
+      213: 5245064437578968822
+    second: pipoya environment_149
+  - first:
+      213: -2427436223999914142
+    second: pipoya environment_150
+  - first:
+      213: 6729837194851733878
+    second: pipoya environment_151
+  - first:
+      213: -389053063254527673
+    second: pipoya environment_152
+  - first:
+      213: 4560857112932244407
+    second: pipoya environment_153
+  - first:
+      213: -6797069528647526910
+    second: pipoya environment_154
+  - first:
+      213: 17548386771767816
+    second: pipoya environment_155
+  - first:
+      213: -4946030637484968888
+    second: pipoya environment_156
+  - first:
+      213: 7349829555250646398
+    second: pipoya environment_157
+  - first:
+      213: -5797422573788971
+    second: pipoya environment_158
+  - first:
+      213: -8908586577867154803
+    second: pipoya environment_159
+  - first:
+      213: 4618282948248793080
+    second: pipoya environment_160
+  - first:
+      213: -6350468688493350464
+    second: pipoya environment_161
+  - first:
+      213: -8370949128357552061
+    second: pipoya environment_162
+  - first:
+      213: 3103489097405033901
+    second: pipoya environment_163
+  - first:
+      213: 8555751340395741444
+    second: pipoya environment_164
+  - first:
+      213: -8133982471991777149
+    second: pipoya environment_165
+  - first:
+      213: 2677660020863510224
+    second: pipoya environment_166
+  - first:
+      213: 6383870446689365287
+    second: pipoya environment_167
+  - first:
+      213: -130400407891164813
+    second: pipoya environment_168
+  - first:
+      213: -1622589153555395314
+    second: pipoya environment_169
+  - first:
+      213: 6430101174837081218
+    second: pipoya environment_170
+  - first:
+      213: 1572656064284792242
+    second: pipoya environment_171
+  - first:
+      213: -5563301283229775714
+    second: pipoya environment_172
+  - first:
+      213: -223307977074485093
+    second: pipoya environment_173
+  - first:
+      213: 1822963590174033505
+    second: pipoya environment_174
+  - first:
+      213: -2143025822049953505
+    second: pipoya environment_175
+  - first:
+      213: 8027967532831557502
+    second: pipoya environment_176
+  - first:
+      213: -4140780760506413435
+    second: pipoya environment_177
+  - first:
+      213: 669007421144007690
+    second: pipoya environment_178
+  - first:
+      213: -1437377681086268929
+    second: pipoya environment_179
+  - first:
+      213: -573042458354574703
+    second: pipoya environment_180
+  - first:
+      213: -5740979716466815977
+    second: pipoya environment_181
+  - first:
+      213: 4194152619265061452
+    second: pipoya environment_182
+  - first:
+      213: -7902918871240493890
+    second: pipoya environment_183
+  - first:
+      213: 1260891278337348260
+    second: pipoya environment_184
+  - first:
+      213: 612902677874526686
+    second: pipoya environment_185
+  - first:
+      213: -8326286384746386767
+    second: pipoya environment_186
+  - first:
+      213: -1918895958880677883
+    second: pipoya environment_187
+  - first:
+      213: 2019232950029742858
+    second: pipoya environment_188
+  - first:
+      213: -6221921971438224410
+    second: pipoya environment_189
+  - first:
+      213: 6091018852721154452
+    second: pipoya environment_190
+  - first:
+      213: 8061559653549701174
+    second: pipoya environment_191
+  - first:
+      213: -8935423898145324504
+    second: pipoya environment_192
+  - first:
+      213: 2730923890187818195
+    second: pipoya environment_193
+  - first:
+      213: -8710504064821122964
+    second: pipoya environment_194
+  - first:
+      213: -3273244934871659173
+    second: pipoya environment_195
+  - first:
+      213: -4435507760122513258
+    second: pipoya environment_196
+  - first:
+      213: -3595659152160859813
+    second: pipoya environment_197
+  - first:
+      213: 6743561456275067184
+    second: pipoya environment_198
+  - first:
+      213: -7360625492652793328
+    second: pipoya environment_199
+  - first:
+      213: 3180125680849184434
+    second: pipoya environment_200
+  - first:
+      213: -6124572563219762750
+    second: pipoya environment_201
+  - first:
+      213: 5060232982559964633
+    second: pipoya environment_202
+  - first:
+      213: 3197819281511340504
+    second: pipoya environment_203
+  - first:
+      213: 1507418373653510951
+    second: pipoya environment_204
+  - first:
+      213: -19476164439517239
+    second: pipoya environment_205
+  - first:
+      213: 7515634830896883481
+    second: pipoya environment_206
+  - first:
+      213: -1798585213691934515
+    second: pipoya environment_207
+  - first:
+      213: -328164375422661378
+    second: pipoya environment_208
+  - first:
+      213: -5863479276327423071
+    second: pipoya environment_209
+  - first:
+      213: 2403110470765465737
+    second: pipoya environment_210
+  - first:
+      213: 412249855775044455
+    second: pipoya environment_211
+  - first:
+      213: -8169573222718236930
+    second: pipoya environment_212
+  - first:
+      213: -3001074421892588646
+    second: pipoya environment_213
+  - first:
+      213: -7257897241505537498
+    second: pipoya environment_214
+  - first:
+      213: -3482414729785346020
+    second: pipoya environment_215
+  - first:
+      213: 5906803955026364632
+    second: pipoya environment_216
+  - first:
+      213: 4989274109513695461
+    second: pipoya environment_217
+  - first:
+      213: 6773169675283298386
+    second: pipoya environment_218
+  - first:
+      213: 7709314085292887666
+    second: pipoya environment_219
+  - first:
+      213: -87593973876935832
+    second: pipoya environment_220
+  - first:
+      213: 2291782460114297841
+    second: pipoya environment_221
+  - first:
+      213: -3386029228978191666
+    second: pipoya environment_222
+  - first:
+      213: 5229481153929015614
+    second: pipoya environment_223
+  - first:
+      213: -7671463619399432624
+    second: pipoya environment_224
+  - first:
+      213: -9173798337371549333
+    second: pipoya environment_225
+  - first:
+      213: 864618608317224819
+    second: pipoya environment_226
+  - first:
+      213: 4717305982022625151
+    second: pipoya environment_227
+  - first:
+      213: -8174903780573876546
+    second: pipoya environment_228
+  - first:
+      213: 4973153630738488421
+    second: pipoya environment_229
+  - first:
+      213: -8705838709142812882
+    second: pipoya environment_230
+  - first:
+      213: 8101046110281231136
+    second: pipoya environment_231
+  - first:
+      213: 3940096580834538360
+    second: pipoya environment_232
+  - first:
+      213: -4964188185394232169
+    second: pipoya environment_233
+  - first:
+      213: -8635224393457336278
+    second: pipoya environment_234
+  - first:
+      213: -6572088914524371505
+    second: pipoya environment_235
+  - first:
+      213: 6589367182752870935
+    second: pipoya environment_236
+  - first:
+      213: -4182436489440866326
+    second: pipoya environment_237
+  - first:
+      213: -8624397002231674520
+    second: pipoya environment_238
+  - first:
+      213: 7614201580323157787
+    second: pipoya environment_239
+  - first:
+      213: -6630535765200347442
+    second: pipoya environment_240
+  - first:
+      213: -1999688852145692893
+    second: pipoya environment_241
+  - first:
+      213: -359140771745528899
+    second: pipoya environment_242
+  - first:
+      213: -5755672699258261935
+    second: pipoya environment_243
+  - first:
+      213: 8656352556804413260
+    second: pipoya environment_244
+  - first:
+      213: 1680524169144661612
+    second: pipoya environment_245
+  - first:
+      213: -3622333302645849907
+    second: pipoya environment_246
+  - first:
+      213: -5256328353973984230
+    second: pipoya environment_247
+  - first:
+      213: -4608554891319587916
+    second: pipoya environment_248
+  - first:
+      213: -2659728909657898164
+    second: pipoya environment_249
+  - first:
+      213: -5279094072291838974
+    second: pipoya environment_250
+  - first:
+      213: -7786726873960570304
+    second: pipoya environment_251
+  - first:
+      213: -2818546766280185316
+    second: pipoya environment_252
+  - first:
+      213: 5110696808555162698
+    second: pipoya environment_253
+  - first:
+      213: -1003500805467313301
+    second: pipoya environment_254
+  - first:
+      213: 406069086222344682
+    second: pipoya environment_255
+  - first:
+      213: -7513506162266072435
+    second: pipoya environment_256
+  - first:
+      213: 5134157412858400726
+    second: pipoya environment_257
+  - first:
+      213: 1513229173163370580
+    second: pipoya environment_258
+  - first:
+      213: 8907319786794522054
+    second: pipoya environment_259
+  - first:
+      213: 7010878748002166141
+    second: pipoya environment_260
+  - first:
+      213: 8554135298596267389
+    second: pipoya environment_261
+  - first:
+      213: 6975275193736593777
+    second: pipoya environment_262
+  - first:
+      213: 6502220063853288299
+    second: pipoya environment_263
+  - first:
+      213: 5627521308771804017
+    second: pipoya environment_16
+  - first:
+      213: -4955942322548253407
+    second: pipoya environment_17
+  - first:
+      213: 7725735365809600799
+    second: pipoya environment_18
+  - first:
+      213: 6148342085320434162
+    second: pipoya environment_19
+  - first:
+      213: -8251909442512376139
+    second: pipoya environment_20
+  - first:
+      213: 7882678447269139346
+    second: pipoya environment_21
+  - first:
+      213: 1040360364440591172
+    second: pipoya environment_22
+  - first:
+      213: 5480941209051805737
+    second: pipoya environment_23
+  - first:
+      213: -6585840312297311406
+    second: pipoya environment_24
+  - first:
+      213: 1631232004224352159
+    second: pipoya environment_25
+  - first:
+      213: -4220531436437744124
+    second: pipoya environment_26
+  - first:
+      213: 8021329173604247666
+    second: pipoya environment_27
+  - first:
+      213: -6550275145761200217
+    second: pipoya environment_28
+  - first:
+      213: 8288021301009187759
+    second: pipoya environment_29
+  - first:
+      213: 5127168831057431348
+    second: pipoya environment_30
+  - first:
+      213: 6479132029779440797
+    second: pipoya environment_31
+  - first:
+      213: 4652226092048876451
+    second: pipoya environment_32
+  - first:
+      213: 8047645392473850452
+    second: pipoya environment_33
+  - first:
+      213: -3208974176664270588
+    second: pipoya environment_34
+  - first:
+      213: -4509929016579711009
+    second: pipoya environment_35
+  - first:
+      213: 6581526987023915174
+    second: pipoya environment_36
+  - first:
+      213: 7376526894328712390
+    second: pipoya environment_37
+  - first:
+      213: 1559411137975475465
+    second: pipoya environment_38
+  - first:
+      213: -5854377923378113922
+    second: pipoya environment_39
+  - first:
+      213: -1220855449169039345
+    second: pipoya environment_40
+  - first:
+      213: -3291904494162438495
+    second: pipoya environment_41
+  - first:
+      213: 4283499939500730413
+    second: pipoya environment_42
+  - first:
+      213: -2958366230203422426
+    second: pipoya environment_43
+  - first:
+      213: 6207038813443710088
+    second: pipoya environment_44
+  - first:
+      213: 2030572533477500290
+    second: pipoya environment_45
+  - first:
+      213: 6271264252456448236
+    second: pipoya environment_46
+  - first:
+      213: 7153399786862840224
+    second: pipoya environment_47
+  - first:
+      213: -1148868669324905566
+    second: pipoya environment_48
+  - first:
+      213: 3173878960087422391
+    second: pipoya environment_49
+  - first:
+      213: -6163185073482545659
+    second: pipoya environment_50
+  - first:
+      213: 1533396531779836783
+    second: pipoya environment_51
+  - first:
+      213: 216594335258073723
+    second: pipoya environment_52
+  - first:
+      213: 401764893353950399
+    second: pipoya environment_53
+  - first:
+      213: 8787584727704435797
+    second: pipoya environment_54
+  - first:
+      213: -5028235362924924977
+    second: pipoya environment_55
+  - first:
+      213: -8499233493244247324
+    second: pipoya environment_56
+  - first:
+      213: 8683692901714858534
+    second: pipoya environment_57
+  - first:
+      213: 975903077157766621
+    second: pipoya environment_58
+  - first:
+      213: 3704813849107265165
+    second: pipoya environment_59
+  - first:
+      213: 5372540494397569775
+    second: pipoya environment_60
+  - first:
+      213: -3631866483412377661
+    second: pipoya environment_61
+  - first:
+      213: -6681010506561437250
+    second: pipoya environment_62
+  - first:
+      213: -6693615625465321402
+    second: pipoya environment_63
+  - first:
+      213: 348146470514360808
+    second: pipoya environment_64
+  - first:
+      213: -8101506746664005463
+    second: pipoya environment_65
+  - first:
+      213: 9081607250218376849
+    second: pipoya environment_66
+  - first:
+      213: -4044301008789701295
+    second: pipoya environment_67
+  - first:
+      213: 8634667960240571527
+    second: pipoya environment_68
+  - first:
+      213: 6138785231038185541
+    second: pipoya environment_69
+  - first:
+      213: 8723937319266220807
+    second: pipoya environment_70
+  - first:
+      213: -2836839904758667752
+    second: pipoya environment_71
+  - first:
+      213: 2800738497486959451
+    second: pipoya environment_72
+  - first:
+      213: -7112260955985102064
+    second: pipoya environment_73
+  - first:
+      213: -2556800622593444066
+    second: pipoya environment_74
+  - first:
+      213: 3261782328177927471
+    second: pipoya environment_75
+  - first:
+      213: -7053304949212433854
+    second: pipoya environment_76
+  - first:
+      213: -6081938183269595827
+    second: pipoya environment_77
+  - first:
+      213: -254703201199155550
+    second: pipoya environment_78
+  - first:
+      213: -2073964685523951444
+    second: pipoya environment_79
+  - first:
+      213: 1728117839306710700
+    second: pipoya environment_80
+  - first:
+      213: -8925612725153143366
+    second: pipoya environment_81
+  - first:
+      213: -5739786814592337439
+    second: pipoya environment_82
+  - first:
+      213: -7488917622722868649
+    second: pipoya environment_83
+  - first:
+      213: -2471488134459147018
+    second: pipoya environment_84
+  - first:
+      213: -2972883216919784539
+    second: pipoya environment_85
+  - first:
+      213: 5304767694738555705
+    second: pipoya environment_86
+  - first:
+      213: -5672680177254640148
+    second: pipoya environment_87
+  - first:
+      213: 4499717167954209321
+    second: pipoya environment_88
+  - first:
+      213: -2891543336857728251
+    second: pipoya environment_89
+  - first:
+      213: 1900216337548390616
+    second: pipoya environment_90
+  - first:
+      213: -8834166021067232336
+    second: pipoya environment_91
+  - first:
+      213: 6895243461974743478
+    second: pipoya environment_92
+  - first:
+      213: -5815566733573784690
+    second: pipoya environment_93
+  - first:
+      213: 2966235415089434378
+    second: pipoya environment_94
+  - first:
+      213: -516497551675681420
+    second: pipoya environment_95
+  - first:
+      213: -7608434275329054776
+    second: pipoya environment_96
+  - first:
+      213: 9025867255550264401
+    second: pipoya environment_97
+  - first:
+      213: -5108435410933453415
+    second: pipoya environment_98
+  - first:
+      213: 1643681096490316927
+    second: pipoya environment_99
+  - first:
+      213: -6424513058756980418
+    second: pipoya environment_100
+  - first:
+      213: 5081022399159821487
+    second: pipoya environment_101
+  - first:
+      213: 9014602456674826538
+    second: pipoya environment_102
+  - first:
+      213: 3231706461141530825
+    second: pipoya environment_103
+  - first:
+      213: -4840865308474148338
+    second: pipoya environment_104
+  - first:
+      213: 4801209794462134547
+    second: pipoya environment_105
+  - first:
+      213: 3083036451207392816
+    second: pipoya environment_106
+  - first:
+      213: 8302485828721943221
+    second: pipoya environment_107
+  - first:
+      213: -6651047759167387260
+    second: pipoya environment_108
+  - first:
+      213: 1746698931972233754
+    second: pipoya environment_109
+  - first:
+      213: -6990685665032284984
+    second: pipoya environment_110
+  - first:
+      213: 3872305060662618764
+    second: pipoya environment_111
+  - first:
+      213: 9081806298510101592
+    second: pipoya environment_112
+  - first:
+      213: 4046437976992939723
+    second: pipoya environment_113
+  - first:
+      213: -6937320415204345719
+    second: pipoya environment_114
+  - first:
+      213: 8700825172591841573
+    second: pipoya environment_115
+  - first:
+      213: -1319522662804332654
+    second: pipoya environment_116
+  - first:
+      213: -5005765018359713245
+    second: pipoya environment_117
+  - first:
+      213: -8328283828438254493
+    second: pipoya environment_118
+  - first:
+      213: -451850005480912618
+    second: pipoya environment_119
+  - first:
+      213: 6076768919630218842
+    second: pipoya environment_120
+  - first:
+      213: -3836478608739407874
+    second: pipoya environment_121
+  - first:
+      213: -1781723305565557185
+    second: pipoya environment_122
+  - first:
+      213: -8356016848645258572
+    second: pipoya environment_123
+  - first:
+      213: -1255476288116064065
+    second: pipoya environment_124
+  - first:
+      213: -6099965827494514884
+    second: pipoya environment_125
+  - first:
+      213: -6533759732829981730
+    second: pipoya environment_126
+  - first:
+      213: 6465032369898909895
+    second: pipoya environment_127
+  - first:
+      213: 5906906911148795711
+    second: pipoya environment_128
+  - first:
+      213: 8194870458692024606
+    second: pipoya environment_129
+  - first:
+      213: -5200180938412129315
+    second: pipoya environment_130
+  - first:
+      213: -2711906510142578625
+    second: pipoya environment_131
+  - first:
+      213: 6439824027106269160
+    second: pipoya environment_132
+  - first:
+      213: 1823762072638408128
+    second: pipoya environment_133
+  - first:
+      213: 5472995229051630589
+    second: pipoya environment_134
+  - first:
+      213: -901702274266804229
+    second: pipoya environment_135
+  - first:
+      213: 5501202369318270105
+    second: pipoya environment_136
+  - first:
+      213: -3445541139453627192
+    second: pipoya environment_137
+  - first:
+      213: -852686039572934184
+    second: pipoya environment_138
+  - first:
+      213: -8447361548358846805
+    second: pipoya environment_139
+  - first:
+      213: 3373469522441570260
+    second: pipoya environment_140
+  - first:
+      213: 5162655929959231195
+    second: pipoya environment_141
+  - first:
+      213: 3502322931102003313
+    second: pipoya environment_142
+  - first:
+      213: 6458580042147428676
+    second: pipoya environment_143
+  - first:
+      213: -3393982537139462093
+    second: pipoya environment_144
+  - first:
+      213: 1357064697816677594
+    second: pipoya environment_145
+  - first:
+      213: 4251719591446197042
+    second: pipoya environment_146
+  - first:
+      213: 2091352455271231335
+    second: pipoya environment_147
+  - first:
+      213: -5060622389584501383
+    second: pipoya environment_148
+  - first:
+      213: -4698480185717832236
+    second: pipoya environment_149
+  - first:
+      213: 3285489359596638605
+    second: pipoya environment_150
+  - first:
+      213: -2861436101367516592
+    second: pipoya environment_151
+  - first:
+      213: -5022076167016688563
+    second: pipoya environment_152
+  - first:
+      213: -5921985689689677583
+    second: pipoya environment_153
+  - first:
+      213: -3200080282566129807
+    second: pipoya environment_154
+  - first:
+      213: -8143090235496665767
+    second: pipoya environment_155
+  - first:
+      213: 818277670419288953
+    second: pipoya environment_156
+  - first:
+      213: 3470278550731396733
+    second: pipoya environment_157
+  - first:
+      213: -4116222703787665754
+    second: pipoya environment_158
+  - first:
+      213: -7874043463836707948
+    second: pipoya environment_159
+  - first:
+      213: 8386085977123812005
+    second: pipoya environment_160
+  - first:
+      213: -348849048027650750
+    second: pipoya environment_161
+  - first:
+      213: 5547123156424513234
+    second: pipoya environment_162
+  - first:
+      213: 5733914429501531686
+    second: pipoya environment_163
+  - first:
+      213: -3799094480374630106
+    second: pipoya environment_164
+  - first:
+      213: 3286038310061669350
+    second: pipoya environment_165
+  - first:
+      213: 8336376225245226148
+    second: pipoya environment_166
+  - first:
+      213: 2305935901527854922
+    second: pipoya environment_167
+  - first:
+      213: 9220900632569231119
+    second: pipoya environment_168
+  - first:
+      213: 5654111825865118210
+    second: pipoya environment_169
+  - first:
+      213: -139019130732118975
+    second: pipoya environment_170
+  - first:
+      213: -2018033558351617
+    second: pipoya environment_171
+  - first:
+      213: 2747655296685226821
+    second: pipoya environment_172
+  - first:
+      213: 233399418750943357
+    second: pipoya environment_173
+  - first:
+      213: 4379703286779367669
+    second: pipoya environment_174
+  - first:
+      213: -9122908229647122292
+    second: pipoya environment_175
+  - first:
+      213: 530296126118772773
+    second: pipoya environment_176
+  - first:
+      213: 6316999016187955731
+    second: pipoya environment_177
+  - first:
+      213: -1075331571273881696
+    second: pipoya environment_178
+  - first:
+      213: -5926554284267088108
+    second: pipoya environment_179
+  - first:
+      213: 9009125982774326119
+    second: pipoya environment_180
+  - first:
+      213: 6635330670358110012
+    second: pipoya environment_181
+  - first:
+      213: 5142158267797813636
+    second: pipoya environment_182
+  - first:
+      213: -1981743582446488294
+    second: pipoya environment_183
+  - first:
+      213: 6147271378214810130
+    second: pipoya environment_184
+  - first:
+      213: 4283598977155907095
+    second: pipoya environment_185
+  - first:
+      213: 5734068844071783027
+    second: pipoya environment_186
+  - first:
+      213: -7343522333916977977
+    second: pipoya environment_187
+  - first:
+      213: -8330013062080192092
+    second: pipoya environment_188
+  - first:
+      213: 1672458196314005869
+    second: pipoya environment_189
+  - first:
+      213: 8400169138056834694
+    second: pipoya environment_190
+  - first:
+      213: -7832105928838627914
+    second: pipoya environment_191
+  - first:
+      213: 2518273661471428775
+    second: pipoya environment_192
+  - first:
+      213: 3711564657794188866
+    second: pipoya environment_193
+  - first:
+      213: -5903177616639058608
+    second: pipoya environment_194
+  - first:
+      213: 791669529163069250
+    second: pipoya environment_195
+  - first:
+      213: 3450383224443599858
+    second: pipoya environment_196
+  - first:
+      213: 2849334763327041981
+    second: pipoya environment_197
+  - first:
+      213: 5143984360711237583
+    second: pipoya environment_198
+  - first:
+      213: 5747279647731339533
+    second: pipoya environment_199
+  - first:
+      213: -43125949102902765
+    second: pipoya environment_200
+  - first:
+      213: 2258005558592867780
+    second: pipoya environment_201
+  - first:
+      213: 2377596419866282644
+    second: pipoya environment_202
+  - first:
+      213: 6669356182654062315
+    second: pipoya environment_203
+  - first:
+      213: 9002762111650624936
+    second: pipoya environment_204
+  - first:
+      213: 770439342934447922
+    second: pipoya environment_205
+  - first:
+      213: -462431718895772389
+    second: pipoya environment_206
+  - first:
+      213: 8134900382836782339
+    second: pipoya environment_207
+  - first:
+      213: 2234540923374433365
+    second: pipoya environment_208
+  - first:
+      213: -802542848209807697
+    second: pipoya environment_209
+  - first:
+      213: -2935476384918105007
+    second: pipoya environment_210
+  - first:
+      213: 2701710766173261441
+    second: pipoya environment_211
+  - first:
+      213: -5270937939636743413
+    second: pipoya environment_212
+  - first:
+      213: 8282524549488000979
+    second: pipoya environment_213
+  - first:
+      213: -3734372660390902984
+    second: pipoya environment_214
+  - first:
+      213: 1502426740798385249
+    second: pipoya environment_215
+  - first:
+      213: 9079479311877884677
+    second: pipoya environment_216
+  - first:
+      213: -2083497154434261318
+    second: pipoya environment_217
+  - first:
+      213: -3240938409344596597
+    second: pipoya environment_218
+  - first:
+      213: -4807940263868434516
+    second: pipoya environment_219
+  - first:
+      213: 2284185558305609322
+    second: pipoya environment_220
+  - first:
+      213: -4409895711742078623
+    second: pipoya environment_221
+  - first:
+      213: -2893639590603394557
+    second: pipoya environment_222
+  - first:
+      213: -3352521720917812981
+    second: pipoya environment_223
+  - first:
+      213: 3746780392278162413
+    second: pipoya environment_224
+  - first:
+      213: -1986178924565743437
+    second: pipoya environment_225
+  - first:
+      213: -3435258389601700999
+    second: pipoya environment_226
+  - first:
+      213: -1041691903773305947
+    second: pipoya environment_227
+  - first:
+      213: -7249232913761685650
+    second: pipoya environment_228
+  - first:
+      213: 4969489085948676905
+    second: pipoya environment_229
+  - first:
+      213: 5380973216765367043
+    second: pipoya environment_230
+  - first:
+      213: -1110232917004724993
+    second: pipoya environment_231
+  - first:
+      213: -6103627204600350399
+    second: pipoya environment_232
+  - first:
+      213: -6010742414889863960
+    second: pipoya environment_233
+  - first:
+      213: 4938791338284154464
+    second: pipoya environment_234
+  - first:
+      213: -8132847747745047478
+    second: pipoya environment_235
+  - first:
+      213: -9050840520277061787
+    second: pipoya environment_236
+  - first:
+      213: 7291829599645393369
+    second: pipoya environment_237
+  - first:
+      213: 7601970348835068347
+    second: pipoya environment_238
+  - first:
+      213: 5354870940295931530
+    second: pipoya environment_239
+  - first:
+      213: -1268947472504246090
+    second: pipoya environment_240
+  - first:
+      213: 1695169479545612663
+    second: pipoya environment_241
+  - first:
+      213: -4282053398787817099
+    second: pipoya large_0
+  - first:
+      213: 8056574753330231757
+    second: pipoya large_1
+  - first:
+      213: 6994558980304613164
+    second: pipoya large_2
+  - first:
+      213: 3824629154630176933
+    second: pipoya large_3
+  - first:
+      213: -4287850117389468265
+    second: pipoya large_4
+  - first:
+      213: 11964428434750918
+    second: pipoya large_5
+  - first:
+      213: 2366221385124544896
+    second: pipoya large_6
+  - first:
+      213: -329792402761760261
+    second: pipoya large_0
+  - first:
+      213: -1055804644694988753
+    second: pipoya large_1
+  - first:
+      213: -4265053625343981594
+    second: pipoya large_2
+  - first:
+      213: -5266825795662667206
+    second: pipoya large_3
+  - first:
+      213: 4724678212233519322
+    second: pipoya large_4
+  - first:
+      213: 749787999270190081
+    second: pipoya large_5
+  - first:
+      213: 2284478720678698681
+    second: pipoya large_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pipoya large_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 134
+        width: 61
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf143c79e875c6bf0800000000000000
+      internalID: -329792402761760261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipoya large_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 137
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f286fb005470951f0800000000000000
+      internalID: -1055804644694988753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipoya large_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 137
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e74161335c7fc4c0800000000000000
+      internalID: -4265053625343981594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipoya large_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 136
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32a9abf7d978e6b0800000000000000
+      internalID: -5266825795662667206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipoya large_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 92
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0e4363dcd619140800000000000000
+      internalID: 4724678212233519322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipoya large_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 79
+        width: 26
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cb9597638c76a00800000000000000
+      internalID: 749787999270190081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipoya large_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 85
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be1ef2fa4914bf10800000000000000
+      internalID: 2284478720678698681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
