@@ -5,9 +5,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public enum JobModeType
+public enum JobMode
 {
     Null,
+    Build,
+    Smash,
+    Cancel
+}
+public enum JobModeType
+{
     Walk,
     Furniture, 
     Tile,
@@ -21,11 +27,12 @@ public class JobModeController : MonoBehaviour
     World world { get { return WorldController.Instance.w; } }
     public static JobModeController Instance { get; protected set; }
 
-    public static JobModeType jobMode { get; protected set; }
-    public static bool isSmashMode { get; protected set; } = false;
+    public static JobMode jobMode { get; protected set; }
+    public static JobModeType jobModeType { get; protected set; }
 
     TileType build_tileType = TileType.Floor;
     string build_furnitureType;
+    string build_material;
     string build_plantSpecies;
 
     #endregion
@@ -40,48 +47,54 @@ public class JobModeController : MonoBehaviour
 
     public void SetMode_Null()
     {
-        isSmashMode = false;
-        jobMode = JobModeType.Null;
+        jobMode = JobMode.Null;
     }
 
     public void SetMode_Build()
     {
-        isSmashMode = false;
+        jobMode = JobMode.Build;
         MouseController.SetCursor("Cursor_Hammer");
     }
 
     public void SetMode_Smash()
     {
-        isSmashMode = true;
+        jobMode = JobMode.Smash;
         MouseController.SetCursor("Cursor_Destroy");
+    }
+
+    public void SetMode_Cancel()
+    {
+        jobMode = JobMode.Cancel;
+        MouseController.SetCursor("Cursor_Cancel");
     }
 
     public void SetMode_Walk()
     {
-        jobMode = JobModeType.Walk;
+        jobModeType = JobModeType.Walk;
     }
 
-    public void SetType_Floor()
+    public void SetType_Floor(string material)
     {
-        jobMode = JobModeType.Tile;
+        jobModeType = JobModeType.Tile;
         build_tileType = TileType.Floor;
+        build_material = material;
     }
 
     public void SetType_Water()
     {
-        jobMode = JobModeType.Tile;
+        jobModeType = JobModeType.Tile;
         build_tileType = TileType.Water;
     }
 
     public void SetType_Furniture(string furnitureType)
     {
-        jobMode = JobModeType.Furniture;
+        jobModeType = JobModeType.Furniture;
         build_furnitureType = furnitureType;
     }
 
     public void SetType_Plant(string plantType)
     {
-        jobMode = JobModeType.Plant;
+        jobModeType = JobModeType.Plant;
         build_plantSpecies = plantType;
     }
 
@@ -90,8 +103,8 @@ public class JobModeController : MonoBehaviour
     #region JOB ASSIGNMENT LOGIC
     public void CreateJob(Tile t)
     {
-        // Smash all!
-        if (isSmashMode)
+        // Smash!
+        if (jobMode == JobMode.Smash)
         {
             // Remove all pending jobs on tile t
             // Will remove dummy objects via cbJobRemoved
@@ -111,11 +124,15 @@ public class JobModeController : MonoBehaviour
             return;
         }
 
-        // Build 
-        switch (jobMode)
+        // Cancel
+        else if (jobMode == JobMode.Cancel)
         {
-            case JobModeType.Null:
-                break;
+            t.RemovePendingJobs();
+        }
+
+        // Build 
+        switch (jobModeType)
+        {
             case JobModeType.Walk:
                 Walk(t);                
                 break;
@@ -158,13 +175,14 @@ public class JobModeController : MonoBehaviour
 
         if (t.hasFurniture)
         {
-            if (t.furniture.type == "WallCave") // Cannot build over cave walls
+            if (t.furniture.type == "Cave Wall") // Cannot build over cave walls
                 return;
         }
 
         #endregion
 
         TileType oldType = t.Type;  // Used to revert in event of job cancellation
+        string oldMaterial = t.material;
         SpriteRenderer sr = TileSpriteController.Instance.tileGameObjectMap[t].GetComponent<SpriteRenderer>();
 
         //  On job complete:
@@ -183,32 +201,52 @@ public class JobModeController : MonoBehaviour
         j.cbJobCancel += (theJob) =>
         {
             t.hasDummyTile = TileType.Null;
+            t.material = oldMaterial;
             t.Type = oldType;
         };
 
+        // Determine required resources based on the material
+        // TODO: implement a dictionary for mapping required resources to construction
         if (type == TileType.Floor)
-            j.requiredResources.Add("Wood", new Resource("Wood", 1));
+        {
+            switch (build_material)
+            {
+                case "Wood":
+                    j.requiredResources.Add("Wood", new Resource("Wood", 1));
+                    break;
+                case "Dirt":
+                    //j.requiredResources.Add("Dirt Block", new Resource("Dirt Block", 1));
+                    break;
+                default:
+                    break;
+            }
+        }
 
         // Create pending job
         world.jobQueue.Enqueue(j, 1);
 
         // Place dummy
         t.hasDummyTile = t.Type;
+        t.material = build_material;
         t.Type = type;
     }
 
     public void RemoveFloor(Tile t)
     {
+
         switch (t.Z)
         {
             case 0:
                 BuildFloor(t, TileType.Soil);
+                t.material = "Soil";
                 break;
             case 1:
                 BuildFloor(t, world.DetermineTerrainType(0,0,t).type);
+                t.material = "Grass";
                 break;
             default:
                 BuildFloor(t, TileType.Grass);
+                t.material = "Grass";
                 break;
         }
 

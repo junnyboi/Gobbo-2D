@@ -16,7 +16,10 @@ public class TooltipController : MonoBehaviour
     TMP_Text[] tooltipTMPs;
 
     public GameObject detailedTooltip;
-    Room highlightedRoom;
+    
+    List<Tile> highlightedTiles = new List<Tile>();
+    public Material highlightMat;
+    public Material spriteLitDefaultMat;
 
     #endregion
     void Start()
@@ -78,6 +81,7 @@ public class TooltipController : MonoBehaviour
 
         if (!t.hasRoom)
         {
+            // Unhighlight previous room and assign highlighted room to null
             HighlightRoom(null);
             return WorldController.Instance.w.currentZDepth == 0 ? "The Underground" : "The Surface";
         }
@@ -98,33 +102,35 @@ public class TooltipController : MonoBehaviour
         return s;
     }
 
-    void HighlightRoom(Room newRoom)
+    public void HighlightRoom(Room newRoom)
     {
 
-        if (highlightedRoom != null)
+        // Un-highlight previous room
+        if (highlightedTiles.Count > 0)
         {
-            // Unhighlight old room
-
-            foreach (Tile t in highlightedRoom.tilesInRoom.ToArray())
+            foreach (Tile t in highlightedTiles.ToArray())
             {
                 GameObject t_go = TileSpriteController.Instance.tileGameObjectMap[t];
                 SpriteRenderer t_sr = t_go.GetComponent<SpriteRenderer>();
+                //t_sr.material = spriteLitDefaultMat;
+                //TileSpriteController.Instance.RefreshTileMaterial(t, t_sr);
                 t_sr.color = new Color(1, 1, 1);
             }
+            highlightedTiles = new List<Tile>();
         }
 
+        // Highlight the new room
         if (newRoom != null)
         {
-            // Highlight the new room
             foreach (Tile t in newRoom.tilesInRoom.ToArray())
             {
                 GameObject t_go = TileSpriteController.Instance.tileGameObjectMap[t];
                 SpriteRenderer t_sr = t_go.GetComponent<SpriteRenderer>();
-                t_sr.color = new Color(0, 1, 0);
+                //t_sr.material = highlightMat;
+                t_sr.color = new Color(0.525f, 0.812f, 0.745f);
+                highlightedTiles.Add(t);
             }
         }
-
-        highlightedRoom = newRoom;
     }
 
     string CheckTileType(Tile t)
@@ -146,7 +152,7 @@ public class TooltipController : MonoBehaviour
     {
         string s = "";
 
-        if (t != null && t.furniture != null)
+        if (t != null && t.hasFurniture)
         {
             s += "Furniture: ";
             s += t.furniture.type;
@@ -159,7 +165,7 @@ public class TooltipController : MonoBehaviour
     {
         string s = "";
 
-        if (t != null && t.plant != null)
+        if (t != null && t.hasPlant)
         {
             s += t.plant.ToString();
         }

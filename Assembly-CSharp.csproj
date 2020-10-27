@@ -128,6 +128,7 @@
     <Compile Include="Assets\Scripts\Slimeboy Scripts\SV ObjectProperties\Float.cs" />
     <Compile Include="Assets\Scripts\Slimeboy Scripts\SV UI and World\EditMode.cs" />
     <Compile Include="Assets\Scripts\Data Model\Furniture.cs" />
+    <Compile Include="Assets\Scripts\Controllers\Graphical\MaterialShaderController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -141,12 +142,11 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\Materials &amp; Shaders\UnlitTransparent.shader" />
+     <None Include="Assets\MaterialShaders\UnlitTransparent.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Art &amp; Stuff\Sprites\Environment\Magic-Cliffs-Environment\public-license.txt" />
-     <None Include="Assets\Materials &amp; Shaders\UnlitLinearGradient.shader" />
+     <None Include="Assets\MaterialShaders\UnlitLinearGradient.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Materials &amp; Shaders\BlurEffect.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

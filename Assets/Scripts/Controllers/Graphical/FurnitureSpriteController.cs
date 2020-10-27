@@ -105,7 +105,7 @@ public class FurnitureSpriteController : MonoBehaviour
             sr.sortingLayerName = "Jobs";
         }
 
-        if (furn.type == "WallCave")
+        if (furn.type == "Cave Wall")
         {
             furn_go.transform.SetParent(GameObject.Find("CaveWallGameObjects").transform, true);
         }

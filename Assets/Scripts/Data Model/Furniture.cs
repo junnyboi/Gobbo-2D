@@ -20,6 +20,7 @@ public class Furniture : IXmlSerializable
     int width = 1;
     int height = 1;
     public string type { get; protected set; }
+    public string material; //TODO
     public float movementCost { get; protected set; }
     public bool isRoomEnclosing { get; protected set; }
     public bool isLinkedAdjacently { get; protected set; }
@@ -297,6 +298,11 @@ public class Furniture : IXmlSerializable
         }
 
         furnParameters[key] += value;
-    } 
+    }
     #endregion
+
+    public override string ToString()
+    {
+        return type;
+    }
 }

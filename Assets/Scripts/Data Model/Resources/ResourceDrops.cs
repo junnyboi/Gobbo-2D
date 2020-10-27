@@ -11,7 +11,7 @@ public class ResourceDrops
         { "", new Resource("", 1) },
         { "Default", new Resource("Orange Gem", 1) },
         { "Plant", new Resource("Wood", 2) },
-        { "WallCave", new Resource("Dirt Block", 1) },
+        { "Cave Wall", new Resource("Dirt Block", 1) },
     };
 
     public static Dictionary<string, Resource> harvestMap = new Dictionary<string, Resource>()

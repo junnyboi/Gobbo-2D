@@ -28,7 +28,7 @@ public class Tile : IXmlSerializable
 
 	#region Tile Parameters
 
-	TileType type = TileType.Null;
+	private TileType type = TileType.Null;
 	public TileType Type
 	{
 		get { return type; }
@@ -42,6 +42,8 @@ public class Tile : IXmlSerializable
 				cbTileTypeChanged?.Invoke(this);
 		}
 	}
+
+	public string material; //TODO: cbOnMaterialChanged
 
 	float elevation;
 	public float Elevation

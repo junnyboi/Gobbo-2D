@@ -64,10 +64,11 @@ public class WorldController : MonoBehaviour
         {
             w.GetTileAtWorldCentre(z).North.Type = TileType.Floor;
             w.GetTileAtWorldCentre(z).South.Type = TileType.Floor;
-            w.PlaceFurniture("OilLamp", w.GetTileAtWorldCentre(z).North, true);
+            w.PlaceFurniture("Oil Lamp", w.GetTileAtWorldCentre(z).North, true);
             w.PlaceFurniture("Stairs", w.GetTileAtWorldCentre(z).South, true);
         }
         w.linkLayerTileList.Add(w.GetTileAtWorldCentre(0).South);
+        Room.FloodFillFromTile(w.GetTileAtWorldCentre(0), false);
 
         // Create plants
         CreatePlants();

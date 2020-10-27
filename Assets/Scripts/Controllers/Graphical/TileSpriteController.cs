@@ -126,7 +126,9 @@ public class TileSpriteController : MonoBehaviour
             return;
         }
 
-        RefreshTileSprite(t, sr);        
+        ColorByElevation(t, sr);
+        RefreshTileSprite(t, sr);
+        RefreshTileMaterial(t, sr);
 
         if (t.hasDummyTile != TileType.Null)
         {
@@ -155,8 +157,6 @@ public class TileSpriteController : MonoBehaviour
 
     void RefreshTileSprite(Tile t, SpriteRenderer sr)
     {
-        ColorByElevation(t, sr);
-
             switch (t.Type)
         {
             case TileType.Soil:
@@ -170,6 +170,7 @@ public class TileSpriteController : MonoBehaviour
                 break;
             case TileType.Grass:
                 sr.sprite = tileSprites["Grass"];
+                t.material = "Grass";
                 break;
             case TileType.Water:
                 sr.color = Color.Lerp(new Color(0, 0, 0, 0.8f), new Color(0, 0, 0, 0f), t.Elevation);
@@ -201,11 +202,25 @@ public class TileSpriteController : MonoBehaviour
                 break;
             default:
                 sr.sprite = null;
-                // Create animated tile
-                /*Animator animator = tileGameObjectMap[t].AddComponent<Animator>();
-                PlayableGraph playableGraph = PlayableGraph.Create();
-                AnimationClip clip = CreateTileSpriteAnimationClip("River_Anim", tileSpritesheets["River"]);
-                AnimationPlayableUtilities.PlayClip(animator, clip, out playableGraph);*/
+                break;
+        }
+    }
+
+    public void RefreshTileMaterial(Tile t, SpriteRenderer sr)
+    {
+        switch (t.material)
+        {
+            case "Grass":
+                sr.material = MaterialShaderController.materials["Grass Wave Material"];
+                break;
+            case "Dirt":
+                sr.material = MaterialShaderController.materials["Stone Material"];
+                break;
+            case "Stone":
+                sr.material = MaterialShaderController.materials["Stone Material"];
+                break;
+            default:
+                sr.material = MaterialShaderController.materials["Sprite-Lit-Default"];
                 break;
         }
     }

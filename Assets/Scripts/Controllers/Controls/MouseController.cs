@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class MouseController : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class MouseController : MonoBehaviour
     public GameObject circleCursorPrefab;
     public GameObject squareCursorPrefab;
     public GameObject squareCursorAnimatedPrefab;
+    public GameObject followGlowPrefab;
+    public GameObject followTextPrefab;
+    public GameObject mouseGlow { get; protected set; }
+    public GameObject mouseText { get; protected set; }
     public GameObject tempSquareCursorAnimated { get; protected set; }
     public static Dictionary<string, Texture2D> cursors = new Dictionary<string, Texture2D>();
 
@@ -41,11 +46,26 @@ public class MouseController : MonoBehaviour
 
         Texture2D[] cursorsLoaded = Resources.LoadAll<Texture2D>("Cursors/");
         foreach (Texture2D cursor in cursorsLoaded)
-        {
             cursors.Add(cursor.name, cursor);
-        }
-
         SetCursor("Cursor_ArrowSplit");
+
+        mouseText = GameObject.Instantiate(followTextPrefab, this.transform);
+        mouseText.name = "Mouse Text";
+        mouseText.SetActive(false);
+
+        mouseGlow = GameObject.Instantiate(followGlowPrefab, new Vector3(0, 1, 0), Quaternion.identity, this.transform);
+        mouseGlow.name = "Mouse Glow";
+    }
+
+    private void Start()
+    {
+        world.cbChangedDepth += () =>
+        {
+            if (world.currentZDepth == 0)
+                mouseGlow.SetActive(true);
+            else
+                mouseGlow.SetActive(false);
+        };
     }
 
     // Update is called once per frame
@@ -53,6 +73,9 @@ public class MouseController : MonoBehaviour
     {
         // Track mouse position wrt world space at every frame
         currPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        // Move all items following the mouse controller to currPosition
+        transform.position = new Vector3(currPosition.x, currPosition.y - 1f, 0);
 
         // Check for mouse inputs
         Input_LeftClick();
@@ -62,6 +85,8 @@ public class MouseController : MonoBehaviour
     }
 
     #region MOUSE INPUTS
+
+    #region Left Click
     void Input_LeftClick()
     {
         // Single-click
@@ -73,12 +98,58 @@ public class MouseController : MonoBehaviour
 
 
             // Object investigation mode
-            if (JobModeController.jobMode == JobModeType.Null && !JobModeController.isSmashMode)
+            if (JobModeController.jobMode == JobMode.Null)
                 Investigate(start_x, start_y);
         }
 
         // Click-drag
         LeftClick_TileDrag();
+    }
+
+    void Investigate(int x, int y)
+    {
+        SetCursor("Cursor_MagnifyingGlass");
+
+        // Initialize
+        Tile t = world.GetTileAt(x, y, -1);
+        GameObject tooltip = TooltipController.Instance.TurnOnDetailedTooltip();
+        TMP_Text tmp = tooltip.GetComponentInChildren<TMP_Text>();
+
+        if (tmp == null)
+            Debug.LogError("ERROR: detailed tooltip TMP not found!");
+
+        // Instantiate animated cursor over the tile
+        if (tempSquareCursorAnimated != null)
+            Destroy(tempSquareCursorAnimated);
+
+        tempSquareCursorAnimated = GameObject.Instantiate(squareCursorAnimatedPrefab, new Vector3(x, y), Quaternion.identity);
+
+        // TODO: Cycle object selection under mouse on multiple clicks
+        // TODO: Enhancement of the information displayed
+        if (t.hasCreature)
+        {
+            Creature c = t.creaturesOnTile[0];
+            tmp.text = c.ToString();
+
+            // Cursor & tooltip should follow the creature
+            GameObject c_go = CreaturesController.Instance.creatureGameObjectMap[c];
+
+            tempSquareCursorAnimated.transform.position = new Vector3(0, 0, 0);
+            tempSquareCursorAnimated.transform.SetParent(c_go.transform, false);
+
+            float vectorScale = c_go.transform.localScale.x;
+            tempSquareCursorAnimated.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f) / vectorScale;
+        }
+        else if (t.hasFurniture)
+            tmp.text = t.furniture.ToString();
+        else if (t.hasResource)
+            tmp.text = t.resource.ToString();
+        else if (t.hasPlant)
+            tmp.text = t.plant.ToString();
+        else if (t.hasRoom)
+            tmp.text = t.room.ToString();
+        else
+            tmp.text = t.ToString();
     }
 
     void LeftClick_TileDrag()
@@ -124,13 +195,14 @@ public class MouseController : MonoBehaviour
                 return;
             }
 
-            // In investigation mode
-            if (JobModeController.jobMode == JobModeType.Null && !JobModeController.isSmashMode)
+            // Tile Investigation Mode
+            if (JobModeController.jobMode == JobMode.Null)
             {
                 CleanDragPreviews();
                 Investigate(Mathf.RoundToInt(currPosition.x), Mathf.RoundToInt(currPosition.y));
             }
 
+            // Normal Drag Mode
             else
             {
                 // Display preview of drag area
@@ -144,11 +216,15 @@ public class MouseController : MonoBehaviour
                             // Display building hint on top of tile position
                             GameObject go = SimplePool.Spawn(squareCursorPrefab, new Vector3(x, y, 0), Quaternion.identity);
                             go.transform.SetParent(this.transform, true);
-
                             listOfDragPreviews_go.Add(go);
+
                         }
                     }
                 }
+
+                // Display selection grid size
+                mouseText.SetActive(true);
+                mouseText.GetComponent<TMP_Text>().text = (end_x - start_x + 1) + " x " + (end_y - start_y + 1);
             }
         }
         #endregion
@@ -156,7 +232,9 @@ public class MouseController : MonoBehaviour
         #region End Drag
         if (Input.GetMouseButtonUp(0))
         {
-            if (JobModeController.jobMode == JobModeType.Null && !JobModeController.isSmashMode)
+            mouseText.SetActive(false);
+
+            if (JobModeController.jobMode == JobMode.Null)
                 SetCursor("Cursor_ArrowSplit");
 
             if (checkToCancelMouseInput) return;
@@ -185,51 +263,7 @@ public class MouseController : MonoBehaviour
         listOfDragPreviews_go.Clear();
     }
 
-    void Investigate(int x, int y)
-    {
-        SetCursor("Cursor_MagnifyingGlass");
-
-        // Initialize
-        Tile t = world.GetTileAt(x, y, -1);
-        GameObject tooltip = TooltipController.Instance.TurnOnDetailedTooltip();
-        TMP_Text tmp = tooltip.GetComponentInChildren<TMP_Text>();
-
-        if (tmp == null)
-            Debug.LogError("ERROR: detailed tooltip TMP not found!");
-
-        // Instantiate animated cursor over the tile
-        if (tempSquareCursorAnimated != null)
-            Destroy(tempSquareCursorAnimated);
-
-        tempSquareCursorAnimated = GameObject.Instantiate(squareCursorAnimatedPrefab, new Vector3(x, y), Quaternion.identity, this.transform);
-
-        // TODO: Cycle object selection under mouse on multiple clicks
-        // TODO: Enhancement of the information displayed
-        if (t.hasCreature)
-        {
-            Creature c = t.creaturesOnTile[0];
-            tmp.text = c.ToString();
-
-            // Cursor & tooltip should follow the creature
-            GameObject c_go = CreaturesController.Instance.creatureGameObjectMap[c];
-
-            tempSquareCursorAnimated.transform.position = new Vector3(0, 0, 0);
-            tempSquareCursorAnimated.transform.SetParent(c_go.transform, false);
-
-            float vectorScale = c_go.transform.localScale.x;
-            tempSquareCursorAnimated.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f) / vectorScale;
-        }
-        else if (t.hasFurniture)
-            tmp.text = t.furniture.ToString();
-        else if (t.hasResource)
-            tmp.text = t.resource.ToString();
-        else if (t.hasPlant)
-            tmp.text = t.plant.ToString();
-        else if (t.hasRoom)
-            tmp.text = t.room.ToString();
-        else
-            tmp.text = t.ToString();
-    }
+    #endregion
 
     void Input_RightClick()
     {
@@ -269,8 +303,8 @@ public class MouseController : MonoBehaviour
             CameraController.Instance.Zoom(Input.GetAxis("Mouse ScrollWheel") * 2f);
         }
     }
-    #endregion
 
+    #endregion
 
     #region UTILITIES
 

@@ -46,7 +46,7 @@ TextureImporter:
     second: WallCave_5
   - first:
       213: -433663559071329284
-    second: WallCave
+    second: Cave Wall
   - first:
       213: 4569065527150480772
     second: WallCave_7
@@ -71,6 +71,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -105,6 +106,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -273,7 +275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WallCave
+      name: Cave Wall
       rect:
         serializedVersion: 2
         x: 64

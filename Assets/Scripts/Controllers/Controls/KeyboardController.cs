@@ -129,6 +129,11 @@ public class KeyboardController : MonoBehaviour
             JobModeController.Instance.SetMode_Smash();
         }
 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            JobModeController.Instance.SetMode_Cancel();
+        }
+
         #endregion
 
 

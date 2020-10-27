@@ -102,12 +102,12 @@ public class World : IXmlSerializable
                         // Underground Tiles
                         case 0:
                             // Create some starting space
-                            if (!(x < width / 2 + 3  && x > width/2 - 3 &&
+                            if (!(x < width / 2 + 3 && x > width / 2 - 3 &&
                                   y < height / 2 + 3 && y > height / 2 - 3)
                                )
-                            {
-                                Furniture wallCave = PlaceFurniture("WallCave", tiles[x, y, z]);
-                            }
+                                PlaceFurniture("Cave Wall", tiles[x, y, z]);
+                            else 
+                                tiles[x, y, z].Type = TileType.Floor;
 
                             // Underground has no elevation
                             tiles[x, y, z].Elevation = -1;
@@ -197,9 +197,9 @@ public class World : IXmlSerializable
             false    // encloses a room?
             ));
 
-        furniturePrototypes.Add("OilLamp",
+        furniturePrototypes.Add("Oil Lamp",
             new Furniture(
-            "OilLamp",
+            "Oil Lamp",
             1,      // passable
             1,      // width
             1,      // height
@@ -208,14 +208,14 @@ public class World : IXmlSerializable
             true    // does not require floor?
             ));
 
-        furniturePrototypes.Add("WallCave",
+        furniturePrototypes.Add("Cave Wall",
             new Furniture(
-            "WallCave",
+            "Cave Wall",
             1000000,      // impassable
             1,      // width
             1,      // height
             false,   // links to neighbours?
-            false,   // encloses a room?
+            true,   // encloses a room?
             true    // does not require floor?
             ));
 
@@ -703,7 +703,7 @@ public class World : IXmlSerializable
         Room r = room;
         if (r == GetOutsideRoom() || r == null)
         {
-            //Debug.LogError("DeleteRoom -- Tried to delete the outside room.");
+            Debug.LogError("DeleteRoom -- Tried to delete the outside room.");
             return;
         }
         roomList.Remove(r);     // Remove this room from rooms list

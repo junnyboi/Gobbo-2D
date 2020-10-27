@@ -5,6 +5,7 @@ using System.Xml.Schema;
 using System.Xml;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 public enum GenderType
 {
@@ -255,7 +256,7 @@ public class Creature : IXmlSerializable
 				if (myJob.requiresResources)
 				{
 					// FIXME -- should support more than one type of resource
-					Resource rNearest = ResourceController.FindNearestResourceStack(currTile, myJob.requiredResources["Wood"].type);
+					Resource rNearest = ResourceController.FindNearestResourceStack(currTile, myJob.requiredResources.First().Value.type);
 					if (rNearest == null)
 					{
 						Debug.Log("Cancelling construction job as resources are unavailable");
@@ -263,9 +264,8 @@ public class Creature : IXmlSerializable
 						return;
 					}
 					// FIXME -- should support more than one type of resource
-					int requiredAmount = myJob.requiredResources["Wood"].amount;
+					int requiredAmount = myJob.requiredResources.First().Value.amount;
 					Job originalJob = myJob;
-					//Debug.Log("Resources required for " + tempTile.ToString());
 
 					Job collectResource = new Job(rNearest.tile, "Collect Resources",
 						(Job j) =>

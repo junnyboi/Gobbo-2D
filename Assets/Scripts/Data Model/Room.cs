@@ -133,7 +133,7 @@ public class Room
         for (int i = 0; i < tilesInRoom.Count; i++)
         {
             // Assign to outside
-            tilesInRoom[i].room = tilesInRoom[i].w.GetOutsideRoom();    
+            tilesInRoom[i].room = tilesInRoom[i].w.GetOutsideRoom();
         }
 
         // Unassign tiles and furniture
@@ -188,19 +188,29 @@ public class Room
         if (excludeCurrentTile)
             tile.room = world.GetOutsideRoom();
 
-        if (oldRoom != null)
+        // If the tile had a pre-existing room, a merger or removal is taking place
+        if (oldRoom != world.GetOutsideRoom())
         {
-            if (oldRoom.tilesInRoom.Contains(tile))
-                oldRoom.tilesInRoom.Remove(tile);
-
-            // If this tile was added to an existing room, delete the old room
-            // and reassign all tiles to the outside room
-            if (oldRoom != world.GetOutsideRoom())
+            // Tile no longer has a room
+            if (tile.room == world.GetOutsideRoom())
             {
-                if (oldRoom.tilesInRoom.Count > 0)
-                    Debug.LogError("DoRoomFloodFill -- oldRoom still has tiles assigned to it, something is wrong here.");
-                world.DeleteRoom(oldRoom);    // reassigns tile to outside room and removes the old roo from the world
+                // Remove tile from the old room
+                if (oldRoom.tilesInRoom.Contains(tile))
+                    oldRoom.tilesInRoom.Remove(tile);
             }
+            else // Tile still has a room
+            {
+                // Tile was added to another room
+                if (tile.room != oldRoom)
+                {
+                    // Delete the old room and unassign all tiles 
+                    world.DeleteRoom(oldRoom); 
+                }
+            }
+
+            //if (oldRoom.tilesInRoom.Count > 0)
+            //    Debug.LogError("DoRoomFloodFill -- oldRoom still has tiles assigned to it, something is wrong here.");
+
         }
     }
 
@@ -229,7 +239,7 @@ public class Room
         Queue<Tile> tilesToCheck = new Queue<Tile>();
         tilesToCheck.Enqueue(tile);
 
-        // floodfill and queue all the tiles up until terminating condition
+        // Floodfill and queue all the tiles up until terminating condition
         while (tilesToCheck.Count > 0)
         {
             Tile t = tilesToCheck.Dequeue();
@@ -246,7 +256,8 @@ public class Room
                         // Stop floodfilling and unassign tiles if conditions are met:
                         if (t2 == null ||
                             t2.Type == TileType.Null || t2.Type == TileType.Water ||
-                            t2.Type == TileType.Soil || t2.Type == TileType.Grass)
+                            t2.Type == TileType.Soil && (!t2.hasFurniture || t2.hasFurniture && !t2.furniture.isRoomEnclosing)|| 
+                            t2.Type == TileType.Grass)
                         {
                             newRoom.UnassignAllTiles();
                             return;
