@@ -70,26 +70,28 @@ public class KeyboardController : MonoBehaviour
 
         #region Camera Controls
 
+        #region Camera movement
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {            
+        {
             Vector3 translation = new Vector3(0, camPanSpeed);
-            CameraController.Instance.Move(translation);
+            CameraController.Instance.MoveFromInput(translation);
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             Vector3 translation = new Vector3(0, -camPanSpeed);
-            CameraController.Instance.Move(translation);
+            CameraController.Instance.MoveFromInput(translation);
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             Vector3 translation = new Vector3(-camPanSpeed, 0);
-            CameraController.Instance.Move(translation);
+            CameraController.Instance.MoveFromInput(translation);
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             Vector3 translation = new Vector3(camPanSpeed, 0);
-            CameraController.Instance.Move(translation);
-        }
+            CameraController.Instance.MoveFromInput(translation);
+        } 
+        #endregion
 
         // Full screen (Map)
         if (Input.GetKeyDown(KeyCode.M))
@@ -136,7 +138,19 @@ public class KeyboardController : MonoBehaviour
 
         #endregion
 
+        #region Debug Console
 
+        // Toggle debug console
+        if (Input.GetKeyDown(KeyCode.BackQuote))
+        {
+            DebugController.Instance.OnToggleDebug();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            DebugController.Instance.OnReturn();
+        }
+        #endregion
     }
 
 }

@@ -19,8 +19,10 @@ public class MouseController : MonoBehaviour
     public GameObject tempSquareCursorAnimated { get; protected set; }
     public static Dictionary<string, Texture2D> cursors = new Dictionary<string, Texture2D>();
 
-    // World positions of the mouse
-    public Vector3 currPosition { get; protected set; }
+    public Creature selectedCreature { get; protected set; } = null;
+
+// World positions of the mouse
+public Vector3 currPosition { get; protected set; }
     public Vector3 leftClickPosition { get; protected set; }
     public Vector3 rightClickPosition { get; protected set; }
     public Vector3 middleClickPosition { get; protected set; }
@@ -82,6 +84,9 @@ public class MouseController : MonoBehaviour
         Input_RightClick();
         Input_MiddleClick();
         Input_ScrollWheel();
+
+        if (Input.anyKeyDown && selectedCreature != null)
+            UnselectCreature();
     }
 
     #region MOUSE INPUTS
@@ -96,29 +101,30 @@ public class MouseController : MonoBehaviour
             start_x = Mathf.RoundToInt(leftClickPosition.x);
             start_y = Mathf.RoundToInt(leftClickPosition.y);
 
-
             // Object investigation mode
             if (JobModeController.jobMode == JobMode.Null)
-                Investigate(start_x, start_y);
+                InvestigateTile(start_x, start_y);
         }
 
+        LeftClick_Up();
+        
         // Click-drag
         LeftClick_TileDrag();
     }
 
-    void Investigate(int x, int y)
+    void InvestigateTile(int x, int y)
     {
         SetCursor("Cursor_MagnifyingGlass");
 
         // Initialize
         Tile t = world.GetTileAt(x, y, -1);
-        GameObject tooltip = TooltipController.Instance.TurnOnDetailedTooltip();
+        GameObject tooltip = TooltipController.Instance.TurnOnInspectorTooltip();
         TMP_Text tmp = tooltip.GetComponentInChildren<TMP_Text>();
 
         if (tmp == null)
             Debug.LogError("ERROR: detailed tooltip TMP not found!");
 
-        // Instantiate animated cursor over the tile
+        // Instantiate new animated cursor over the tile
         if (tempSquareCursorAnimated != null)
             Destroy(tempSquareCursorAnimated);
 
@@ -128,18 +134,26 @@ public class MouseController : MonoBehaviour
         // TODO: Enhancement of the information displayed
         if (t.hasCreature)
         {
-            Creature c = t.creaturesOnTile[0];
-            tmp.text = c.ToString();
+            selectedCreature = t.creaturesOnTile[0];
+            TooltipController.Instance.TurnOffDetailedTooltip();
+            TooltipController.Instance.TurnOnCharacterPopup(selectedCreature);
 
             // Cursor & tooltip should follow the creature
-            GameObject c_go = CreaturesController.Instance.creatureGameObjectMap[c];
+            GameObject c_go = CreaturesController.Instance.creatureGameObjectMap[selectedCreature];
 
             tempSquareCursorAnimated.transform.position = new Vector3(0, 0, 0);
             tempSquareCursorAnimated.transform.SetParent(c_go.transform, false);
 
-            float vectorScale = c_go.transform.localScale.x;
-            tempSquareCursorAnimated.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f) / vectorScale;
+            // Scale cursor to creature size
+            float scale = c_go.transform.localScale.x;
+            tempSquareCursorAnimated.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f) / scale;
+
+            // Set closeup cam to follow the creature
+            Camera cam = CameraController.Instance.CloseupCam;
+            cam.gameObject.transform.SetParent(c_go.transform, false);
+            TooltipController.Instance.characterPopup.SetActivePlaceholder(false);
         }
+
         else if (t.hasFurniture)
             tmp.text = t.furniture.ToString();
         else if (t.hasResource)
@@ -176,7 +190,7 @@ public class MouseController : MonoBehaviour
 
         while (listOfDragPreviews_go.Count != 0)
         {
-            if (listOfDragPreviews_go.Count > 1 && TooltipController.Instance.detailedTooltip.activeSelf)
+            if (listOfDragPreviews_go.Count > 1 && TooltipController.Instance.inspectorTooltip.activeSelf)
             {
                 Destroy(tempSquareCursorAnimated);
                 TooltipController.Instance.TurnOffDetailedTooltip();
@@ -199,7 +213,7 @@ public class MouseController : MonoBehaviour
             if (JobModeController.jobMode == JobMode.Null)
             {
                 CleanDragPreviews();
-                Investigate(Mathf.RoundToInt(currPosition.x), Mathf.RoundToInt(currPosition.y));
+                InvestigateTile(Mathf.RoundToInt(currPosition.x), Mathf.RoundToInt(currPosition.y));
             }
 
             // Normal Drag Mode
@@ -255,6 +269,24 @@ public class MouseController : MonoBehaviour
         #endregion
     }
 
+    void LeftClick_Up()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            int x = Mathf.RoundToInt(currPosition.x);
+            int y = Mathf.RoundToInt(currPosition.y);
+            Tile t = world.GetTileAt(x, y, -1);
+
+            // Centre camera around creature
+            if (selectedCreature != null)
+                CameraController.Instance.CentreAroundCreature(selectedCreature);
+
+            // Toggle layer when clicking on a staircase or cave
+            if (t.hasFurniture && t.furniture.isLinkedVertically)
+                world.ToggleLayer();
+        }
+    }
+
     void CleanDragPreviews()
     {
         // Clean up all cursor drag previews
@@ -274,15 +306,19 @@ public class MouseController : MonoBehaviour
 
             // Unselect all job modes
             JobModeController.Instance.SetMode_Null();
-            TooltipController.Instance.detailedTooltip.SetActive(false);
+            TooltipController.Instance.inspectorTooltip.SetActive(false);
             SetCursor("Cursor_ArrowSplit");
+            UnselectCreature();
+
+            if (tempSquareCursorAnimated != null)
+                Destroy(tempSquareCursorAnimated);
         }
 
         // Click-drag
         if (Input.GetMouseButton(1))
         {
             Vector3 translation = rightClickPosition - currPosition;
-            CameraController.Instance.Move(translation);
+            CameraController.Instance.MoveFromInput(translation);
         }
     }
 
@@ -321,7 +357,14 @@ public class MouseController : MonoBehaviour
     }
     bool checkToCancelMouseInput
     { get { return EventSystem.current.IsPointerOverGameObject()
-                    || Input.GetKey(KeyCode.Escape); } } 
+                   || Input.GetKey(KeyCode.Escape); } } 
+
+    void UnselectCreature()
+    {
+        selectedCreature = null;
+        CameraController.Instance.CentreAroundCreature(null);
+    }
+
     #endregion
 
 

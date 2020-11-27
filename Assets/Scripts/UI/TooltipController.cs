@@ -3,30 +3,36 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class TooltipController : MonoBehaviour
+public class TooltipController : MonoBehaviour, inspectorTooltip
 {
     #region VARIABLE DECLARATION
-    private Vector3 offset = new Vector3(90, -90);
 
-    public static TooltipController Instance;
-    MouseController mouseController { get { return MouseController.Instance; } }
-
-    public GameObject blackBackground;
+    [Header("Tooltips")]
     public GameObject mouseoverTooltip;
-    TMP_Text[] tooltipTMPs;
+    public GameObject inspectorTooltip;
 
-    public GameObject detailedTooltip;
-    
-    List<Tile> highlightedTiles = new List<Tile>();
+    [Header("Pop-ups")]
+    public PopupController_Character characterPopup;
+    public PopupController detailsPopup;
+
+    [Header("Materials")]
     public Material highlightMat;
     public Material spriteLitDefaultMat;
 
+    [Header("Miscellaneous")]
+    public static TooltipController Instance;
+    public GameObject blackBackground;
+    private Vector3 offset = new Vector3(90, -90);
+    MouseController mouseController { get { return MouseController.Instance; } }
+    TMP_Text[] tooltipTMPs;
+    List<Tile> highlightedTiles = new List<Tile>();
     #endregion
     void Start()
     {
         Instance = this;
         blackBackground.SetActive(false);
         TooltipController.Instance.TurnOffDetailedTooltip();
+        TooltipController.Instance.TurnOffCharacterPopup();
         tooltipTMPs = mouseoverTooltip.GetComponentsInChildren<TMP_Text>();
 
         // Validation
@@ -36,7 +42,7 @@ public class TooltipController : MonoBehaviour
             return;
         }
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -220,26 +226,34 @@ public class TooltipController : MonoBehaviour
     #endregion
 
     #region UTILITY
-    public GameObject TurnOnDetailedTooltip()
+    public GameObject TurnOnInspectorTooltip()
     {
-        detailedTooltip.SetActive(true);
+        inspectorTooltip.SetActive(true);
         //detailedTooltip.transform.SetParent(this.transform, true);
         Vector3 newPosition = Input.mousePosition + offset;
-        detailedTooltip.transform.position = newPosition;
+        inspectorTooltip.transform.position = newPosition;
 
-        return detailedTooltip;
+        return inspectorTooltip;
     }
     public void TurnOffDetailedTooltip()
     {
-        if (detailedTooltip.activeSelf)
-        {
-            detailedTooltip.SetActive(false);
-        }
+        if (inspectorTooltip.activeSelf)
+            inspectorTooltip.SetActive(false);
     }
 
     public void SetTooltipOffset(Vector3 offset)
     {
         this.offset = offset;
-    } 
+    }
+
+    public void TurnOnCharacterPopup(Creature c)
+    {
+        characterPopup.SetActive(true);
+        characterPopup.SetHeader(c.ToString());
+    }
+    public void TurnOffCharacterPopup()
+    {
+         characterPopup.SetActive(false);
+    }
     #endregion
 }

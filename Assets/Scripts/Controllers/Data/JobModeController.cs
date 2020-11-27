@@ -14,6 +14,7 @@ public enum JobMode
 }
 public enum JobModeType
 {
+    Null,
     Walk,
     Furniture, 
     Tile,
@@ -48,6 +49,7 @@ public class JobModeController : MonoBehaviour
     public void SetMode_Null()
     {
         jobMode = JobMode.Null;
+        jobModeType = JobModeType.Null;
     }
 
     public void SetMode_Build()

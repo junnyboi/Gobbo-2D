@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Closeup Material
+  m_Shader: {fileID: -6465566751694194690, guid: b6539cbe581bfcb40ba57f108eae578c,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_3AB3B27C:
+        m_Texture: {fileID: 8600000, guid: 2d61b55e11ceb144baf8b9f8c1f5a47d, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_4F8AB873:
+        m_Texture: {fileID: 2800000, guid: 7252a8d1d2ee2bb4582595ac0d3376e3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1B361DE6: 10
+    - Vector1_2A80B631: 2.6
+    - Vector1_35680869: 5
+    - Vector1_682E3E8C: 0.1
+    - Vector1_A5ADD5F3: 40
+    - Vector1_B77371F4: 2
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - Color_78FB5DF0: {r: 0.15471691, g: 0.23353556, b: 1, a: 1}
+    - Color_F6E915A: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    - Vector2_1A69BA77: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_6EA6373E: {r: 25, g: 40, b: 0, a: 0}
+    - Vector2_87180389: {r: -0.01, g: 0.01, b: 0, a: 0}
+    - Vector4_7E9B42C0: {r: 4, g: 4, b: 4, a: 4}
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

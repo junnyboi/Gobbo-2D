@@ -13,6 +13,7 @@ public class SpeedSlider : MonoBehaviour
     {
         Instance = this;
         slider = gameObject.GetComponent<Slider>();
+        slider.value = 1; //initialize
         slider.onValueChanged.AddListener( delegate { OnValueChanged(); } );
     }
 

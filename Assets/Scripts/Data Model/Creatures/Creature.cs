@@ -831,7 +831,7 @@ public class Creature : IXmlSerializable
 		// Assign destination
 		myJob = new Job(moveToTile, "Attack", (job) =>
 		{
-			Debug.Log(nameShortform + " is attacking " + hostile.ToString());
+			//Debug.Log(nameShortform + " is attacking " + hostile.ToString());
 
 			// Trigger attack animations
 			cancelAnimationBool = "Idle";

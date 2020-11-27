@@ -294,7 +294,14 @@ public class DateTimeController : MonoBehaviour
 
     public void TogglePause()
     {
-        Time.timeScale = Time.timeScale == 0 ? SpeedSlider.Instance.slider.value : 0;
+        try
+        {
+            Time.timeScale = Time.timeScale == 0 ? SpeedSlider.Instance.slider.value : 0;
+        }
+        catch
+        {
+            Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+        }
     }
 
     public void ChangeSpeed(float multiplier)

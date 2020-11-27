@@ -9,7 +9,7 @@ public class CreaturesController : MonoBehaviour
     public Dictionary<Creature, GameObject> creatureGameObjectMap;
     Dictionary<string, GameObject> characterPrefabs;
 
-    World world { get { return WorldController.Instance.w; } }
+    World w { get { return WorldController.Instance.w; } }
     public static CreaturesController Instance;
 
     #endregion
@@ -24,11 +24,11 @@ public class CreaturesController : MonoBehaviour
         creatureGameObjectMap = new Dictionary<Creature, GameObject>();
 
         // Register our callback so that our GameObject gets updated whenever a char's data changes
-        world.cbCreatureCreated += OnCharacterCreated;
-        world.cbCreatureRemoved += OnCharacterRemoved; ;
+        w.cbCreatureCreated += OnCharacterCreated;
+        w.cbCreatureRemoved += OnCharacterRemoved; ;
 
         // Check for pre-existing (loaded) characters, and trigger their callbacks
-        foreach (Creature c in world.creaturesList)
+        foreach (Creature c in w.creaturesList)
             OnCharacterCreated(c);
     }
 
@@ -46,7 +46,7 @@ public class CreaturesController : MonoBehaviour
 
     #region CALLBACKS
 
-    public void OnCharacterCreated(Creature c)
+    void OnCharacterCreated(Creature c)
     {
         GameObject c_go;
 
@@ -93,14 +93,18 @@ public class CreaturesController : MonoBehaviour
         c.cbCreatureMoved += OnMovedTile;
         c.cbCreatureOlder_year += OnOlder_year;
         c.cbCreatureChangedDepth += OnChangeDepth;
-        world.cbChangedDepth += OnChangeDepth;
+        w.cbChangedDepth += OnChangeDepth;
 
     }
 
     void OnChangeDepth(Creature c)  // For Creature :: cbCreatureMoved
     {
-        if (c.currentDepth != world.currentZDepth)
+        if (c.currentDepth != w.currentZDepth)
+        {
+            Tile prevTile = w.GetTileAt(c.currTile.X, c.currTile.Y, w.currentZDepth);
+            prevTile.creaturesOnTile.Remove(c);
             creatureGameObjectMap[c].SetActive(false);
+        }
         else
             creatureGameObjectMap[c].SetActive(true);
     }
@@ -109,7 +113,7 @@ public class CreaturesController : MonoBehaviour
     {
         foreach (Creature c in creatureGameObjectMap.Keys)
         {
-            if (c.currentDepth != world.currentZDepth)
+            if (c.currentDepth != w.currentZDepth)
                 creatureGameObjectMap[c].SetActive(false);
             else
                 creatureGameObjectMap[c].SetActive(true);
@@ -121,7 +125,7 @@ public class CreaturesController : MonoBehaviour
         // Creature death due to old age
         if (c.age >= c.lifespan)
         {
-            world.RemoveCreature(c);
+            w.RemoveCreature(c);
             return;
         }
 
@@ -154,10 +158,19 @@ public class CreaturesController : MonoBehaviour
         c_go.transform.position = new Vector3(c.X, c.Y, 0);
     }
 
-    public void OnCharacterRemoved(Creature c)
+    void OnCharacterRemoved(Creature c)
     {
+        // unattach any cameras and return to camera controller
+        GameObject c_go = creatureGameObjectMap[c];
+        Camera attachedCam = c_go.GetComponentInChildren<Camera>();
+        if (attachedCam != null)
+        {
+            attachedCam.gameObject.transform.SetParent(CameraController.Instance.transform, false);
+            TooltipController.Instance.characterPopup.SetActivePlaceholder(true);
+        }
+
         // destroy the visual GameObject
-        Destroy(creatureGameObjectMap[c]);
+        Destroy(c_go);
 
         // remove from dictionary map
         creatureGameObjectMap.Remove(c);
@@ -243,19 +256,19 @@ public class CreaturesController : MonoBehaviour
     public void CreateGoblyn(Tile tile = null)
     {
         if (tile == null)
-            world.CreateCreature(world.GetTileAtWorldCentre(-1), SpeciesCreature.Goblyn);
+            w.CreateCreature(w.GetTileAtWorldCentre(-1), SpeciesCreature.Goblyn);
         else
-            world.CreateCreature(tile, SpeciesCreature.Goblyn);
+            w.CreateCreature(tile, SpeciesCreature.Goblyn);
     }
 
     public void CreateGoblyn()
     {
-        Creature gob = world.CreateCreature(world.GetTileAtWorldCentre(-1), SpeciesCreature.Goblyn);
+        Creature gob = w.CreateCreature(w.GetTileAtWorldCentre(-1), SpeciesCreature.Goblyn);
     } 
     #endregion
 
-    public void RemoveAllCreaturess()
+    public void RemoveAllCreatures()
     {
-        world.RemoveAllCreatures();
+        w.RemoveAllCreatures();
     }
 }

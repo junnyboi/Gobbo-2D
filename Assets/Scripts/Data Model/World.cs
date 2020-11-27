@@ -799,6 +799,14 @@ public class World : IXmlSerializable
         c.AbandonJob();
         cbCreatureRemoved?.Invoke(c);
 
+        // Remove creature reference from tiles
+        Tile[] creatureTiles = new Tile[] { c.currTile, c.nextTile, c.destTile };
+        foreach (Tile t in creatureTiles)
+        {
+            if (t.creaturesOnTile.Contains(c))
+                t.creaturesOnTile.Remove(c);
+        }
+
         if (c is Goblyn)
         {
             Goblyn gob = c as Goblyn;
